@@ -1,0 +1,53 @@
+{% assign chapter_array = "" | split: ',' %}
+{% assign titles_array = "" | split: ',' %}
+
+{% for section in site.data.structure %}
+  {% for chapter in section.chapters %}
+    {% assign chapter_array = chapter_array | push: chapter.url %} 
+  {% endfor %}
+{% endfor %}
+
+{% for section in site.data.structure %}
+  {% for chapter in section.chapters %}
+    {% assign titles_array = titles_array | push: chapter.title %} 
+  {% endfor %}
+{% endfor %}
+
+{% for item in chapter_array %}
+  {% if item == page.url %}
+    {% assign position = forloop.index0 %}
+    {% assign previous = position | minus:1 %}
+    {% assign next = position | plus:1 %}
+    {% break %} 
+  {% endif %}
+{% endfor %}
+
+
+{% include head.html %}
+
+{% include nav.html %}
+
+<div class="container mw7 w-100 ph0-l ph3 center relative">
+<div class="ph4-l pt5">
+<h1 class="f1-l f2 fw4 lh-solid mv3 posttitle p-name">{{page.title}}</h1>
+<h2 class="f3 fw3 lh-title mt1 subtitle p-summary">{{page.subtitle}}</h2>
+
+{{content}}
+
+</div>
+</div>
+
+<div class="bt b--black-10 pa2 w-100 mt3">
+    <div class="mw7 w-100 ph0-l ph3 center relative pv3">
+
+    <div class="flex flex-wrap justify-between items-center">
+        <div>
+            Next:
+            <br>{{titles_array[next]}}
+        </div>
+        <div class="">
+            <a href="{{chapter_array[next]}}">Next</a>
+        </div>
+    </div>
+</div>
+</div>
