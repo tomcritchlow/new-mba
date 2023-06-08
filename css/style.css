@@ -1,5 +1,93 @@
-html{
-  -webkit-font-smoothing: initial;
-  font-smoothing: initial;
-  font-family:Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+:root {
+  --newmba-green: #00ADA2;
+  --newmba-blue: #1B1843;
+  --newmba-pink:#FF10F0;
+  --newmba-pale-green:#C0ECEF;
+  --newmba-offwhite:#F5F5EF;
+  --newmba-dark-green:#142423;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  color:#25282b;
+  -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+}
+
+.newmba-green{
+  color:var(--newmba-green);
+}
+
+.newmba-offwhite{
+  color:var(--newmba-offwhite);
+}
+
+.b--newmba-green{
+  border-color:var(--newmba-green);
+}
+
+.bg-newmba-pale-green{
+  background-color:var(--newmba-pale-green);
+}
+
+.bg-newmba-offwhite{
+  background-color:var(--newmba-offwhite)
+}
+
+.bg-newmba-blue{
+  background-color:var(--newmba-blue);
+}
+
+.bg-newmba-dark-green{
+  background-color:var(--newmba-dark-green);
+}
+
+.bg-newmba-green{
+  background-color:var(--newmba-green);
+}
+
+.lora{
+  font-family: 'Lora', serif;
+}
+
+.cormorant{
+  font-family:'Cormorant', serif;
+}
+
+.nunito{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.headline{
+  font-size:70px;
+  line-height:75px;
+}
+
+.logo{
+  width:160px
+}
+
+.navlink .menudiv{
+  display:none;
+  box-shadow:0 10px 14px 0 rgb(0 0 0 / 10%)
+}
+
+.navlink:hover{
+  font-weight:600;
+}
+
+.navlink:hover .menudiv{
+  display:block;
+}
+
+.navcontainer:has(:focus){
+  background-color:var(--newmba-dark-green) !important;
+}
+
+.bg-newmba-light-green{
+  background-color: #C2E4DF;
 }
