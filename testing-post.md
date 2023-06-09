@@ -4,6 +4,11 @@ subtitle: Whatever this is
 layout: post
 ---
 
+{% include summary.html content="
+* something
+* something2
+" %}
+
 There’s an idea that starting a blog is harder than it used to be. That there used to be a way to write a few words, slap it online and wait for the traffic to roll in.
 
 I call BS. It’s not that it’s not true exactly - but that kind of thinking is living in the shadow of the Digg homepage.
