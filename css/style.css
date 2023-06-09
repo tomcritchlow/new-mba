@@ -91,3 +91,8 @@ html, body {
 .bg-newmba-light-green{
   background-color: #C2E4DF;
 }
+
+p{
+    font-size: 1.125rem;
+    line-height: 1.7222222222;
+}
