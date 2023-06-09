@@ -4,11 +4,16 @@
 
 {% include nav.html color="dark" %}
 
-<div class="mw7 ph3 center">
-    <h1 class="nunito f2 fw8 lh-solid mv1 posttitle p-name">{{page.title}}</h1>
-    <h2 class="nunito f3 fw3 lh-copy mt1 subtitle p-summary i">{{page.subtitle}}</h1>
+<div class="mw7 ph3 center mt5">
+    <h1 class="nunito f1 fw6 lh-solid mv1 posttitle p-name">{{page.title}}</h1>
+    <h2 class="nunito f3 fw4 lh-copy mt1 subtitle p-summary">{{page.subtitle}}</h1>
+
+    <div class="content">
+        {{content}}
+    </div>
+
 </div>
 
-{{content}}
+
 
 </div>
