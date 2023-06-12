@@ -101,3 +101,12 @@ p, li, ul, ol, blockquote{
   padding-top: 2rem;
   margin-bottom: 0px;
 } 
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.rotated {
+  animation: spin 2s linear;
+}

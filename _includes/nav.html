@@ -10,8 +10,8 @@
 
   </div>
 
-  <div id="mobilenav" class="absolute dn w-100 left-0 top-2 mt4 bb b--newmba-green">
-    <div class="f2 pa4 w-100 bg-newmba-dark-green absolute ">
+  <div id="mobilenav" class="absolute dn w-100 left-0 top-2 mt4">
+    <div class="f2 pa4 w-100 bg-newmba-dark-green absolute bb b--newmba-green">
     <div class="mobilenavlink fw6 pv3">
       <div class="flex justify-between items-center">
       <div>Blog</div>
@@ -89,8 +89,9 @@
 
   });
   
-  $('.mobilenavlink').on('click', function() {
+$('.mobilenavlink').on('click', function() {
   $(this).children('.mobilenavsubmenu').toggleClass("dn");
+  $(".chevron").toggleClass("rotated");
 });
 
 </script>
