@@ -12,7 +12,7 @@
 
   <div id="mobilenav" class="absolute">
     <div class="mobilenavlink">Blog
-      <div class="dn">Sub-menu</div>
+      <div class="dn mobilenavsubmenu">Sub-menu</div>
     </div>
     <div class="">Consulting</div>
 
@@ -66,7 +66,7 @@
   });
   
   $('.mobilenavlink').on('click', function() {
-  $(this).children('.child').toggleClass("dn");
+  $(this).children('.mobilenavsubmenu').toggleClass("dn");
 });
 
 </script>
