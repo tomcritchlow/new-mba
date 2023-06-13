@@ -90,8 +90,9 @@
   });
   
 $('.mobilenavlink').on('click', function() {
-  $(this).children('.mobilenavsubmenu').toggleClass("dn");
   $(this).find("svg").toggleClass("rotated");
+  $(this).children('.mobilenavsubmenu').toggleClass("dn");
+  
 });
 
 </script>
