@@ -1,44 +1,38 @@
 
 <script src="https://unpkg.com/lunr/lunr.js"></script>
 
-
 <input type="text" id="search" placeholder="Search">
 <div id="results"></div>
 
 <script>
-var index = lunr(function () {
-  this.field('title')
-  this.field('content')
-})
+var idx;
 
-{% capture searchjson %}
-[
-  {% for post in site.posts %}
-    {
-      "title": "{{ post.title | escape }}",
-      "url": "{{ site.baseurl }}{{ post.url }}",
-      "date": "{{ post.date }}",
-      "content": "{{ post.content | strip_html | escape }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
-]
-{% endcapture %}
+fetch("https://newmba.co/search.json")
+  .then(response => response.json())
+  .then(data => {
+    idx = lunr(function () {
+      this.field('title')
+      this.field('content')
 
-var documents = {{searchjson}}
-
-documents.forEach(function (doc) {
-  index.add(doc)
-})
+      data.forEach(function (doc) {
+        this.add(doc)
+      }, this)
+    })
+  });
 
 function search(query) {
-  return index.search(query).map(function (result) {
-    return documents.filter(function (page) {
+  return idx.search(query).map(function (result) {
+    return data.filter(function (page) {
       return page.url === result.ref
     })[0]
   })
 }
 
 document.getElementById('search').addEventListener('input', function () {
+  if (!idx) {
+    console.log('Index is not ready');
+    return;
+  }
   var results = search(this.value)
   var resultsDiv = document.getElementById('results')
   resultsDiv.innerHTML = ''
