@@ -38,11 +38,12 @@ document.getElementById('search').addEventListener('input', function () {
   var results = search(this.value)
   var resultsDiv = document.getElementById('results')
   resultsDiv.innerHTML = ''
-  alert(results)
   results.forEach(function (result) {
-    var div = document.createElement('div')
-    div.innerHTML = '<a href="' + result.url + '">' + result.title + '</a>'
-    resultsDiv.appendChild(div)
+    if(result) {
+      var div = document.createElement('div')
+      div.innerHTML = '<a href="' + result.url + '">' + result.title + '</a>'
+      resultsDiv.appendChild(div)
+    }
   })
 })
 </script>
