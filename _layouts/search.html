@@ -14,6 +14,7 @@ fetch("https://newmba.co/search.json")
     data = fetchedData;
     console.log(data);
     idx = lunr(function () {
+      this.ref('url')
       this.field('title')
       this.field('content')
 
