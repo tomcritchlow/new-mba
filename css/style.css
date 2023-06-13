@@ -107,5 +107,5 @@ p, li, ul, ol, blockquote{
 }
 
 .rotated {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
