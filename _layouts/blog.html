@@ -1,0 +1,17 @@
+{% include head.html %}
+
+{% include nav.html color="dark" %}
+
+
+{% for post in site.posts %}
+
+<div class="pv0 mv0">
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="f5 black-50 i">{{post.subtitle}}</span>
+</div>
+
+{% endfor %}
+
+
+
+</div>
