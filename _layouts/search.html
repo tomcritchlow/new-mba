@@ -10,7 +10,8 @@ var data;
 
 fetch("https://newmba.co/search.json")
   .then(response => response.json())
-  .then(data => {
+  .then(fetchedData => {
+    data = fetchedData;
     idx = lunr(function () {
       this.field('title')
       this.field('content')
