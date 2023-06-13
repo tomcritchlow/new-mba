@@ -24,12 +24,17 @@ fetch("https://newmba.co/search.json")
   });
 
 function search(query) {
-  return idx.search(query).map(function (result) {
+  var results = idx.search(query);
+  console.log('Search query:', query);
+  console.log('Search results:', results);
+
+  return results.map(function (result) {
     return data.filter(function (page) {
-      return page.url === result.ref
-    })[0]
-  })
+      return page.url === result.ref;
+    })[0];
+  });
 }
+
 
 document.getElementById('search').addEventListener('input', function () {
   if (!idx) {
