@@ -25,8 +25,13 @@ fetch("https://newmba.co/search.json")
   });
 
 function search(query) {
-  var results = idx.search(query);
-  console.log('Search query:', query);
+  // Split the query into words, add ~1 to each word, then join them back together
+  var fuzzyQuery = query.split(' ').map(function(word) {
+    return word + '~1';
+  }).join(' ');
+
+  var results = idx.search(fuzzyQuery);
+  console.log('Search query:', fuzzyQuery);
   console.log('Search results:', results);
 
   return results.map(function (result) {
@@ -35,6 +40,7 @@ function search(query) {
     })[0];
   });
 }
+
 
 
 document.getElementById('search').addEventListener('input', function () {
