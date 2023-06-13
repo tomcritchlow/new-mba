@@ -1,6 +1,27 @@
----
-layout: null
----
+<!-- Bookmarklet code
+
+    javascript: (function () {
+    var title = (document.querySelector('meta[property="og:title"]') || {}).content || document.title;
+    var url = (document.querySelector('link[rel="canonical"]') || {}).href || window.location.href;
+    var description = (document.querySelector('meta[property="og:description"]') || {}).content || window.getSelection().toString();
+    var authorMeta = document.querySelector('meta[name="author"]');
+    var author = authorMeta ? authorMeta.content : "";
+    var ogImage = (document.querySelector('meta[property="og:image"]') || {}).content;
+    
+    var data = {
+        title: title,
+        url: url,
+        description: description,
+        author: author,
+        image: ogImage || ""
+    };
+    
+    var queryString = new URLSearchParams(data).toString();
+    window.location.href = 'https://newmba.co/bookmarklet.html?' + queryString;
+})();
+
+
+-->
 
 <!DOCTYPE html>
 <html>
@@ -24,6 +45,10 @@ layout: null
                 <textarea id="description" name="description" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
             </div>
             <div class="measure">
+                <label for="comments" class="f6 b db mb2">Comments:</label>
+                <textarea id="comments" name="comments" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
+            </div>
+            <div class="measure">
                 <label for="author" class="f6 b db mb2">Author:</label>
                 <input type="text" id="author" name="author" class="input-reset ba b--black-20 pa2 mb2 db w-100">
             </div>
@@ -43,6 +68,7 @@ layout: null
         document.getElementById('title').value = urlParams.get('title');
         document.getElementById('url').value = urlParams.get('url');
         document.getElementById('description').value = urlParams.get('description');
+        document.getElementById('comments').value = urlParams.get('comments') || "";
         document.getElementById('author').value = urlParams.get('author');
         document.getElementById('image').value = urlParams.get('image');
         
@@ -50,6 +76,7 @@ layout: null
             var title = document.getElementById('title').value;
             var url = document.getElementById('url').value;
             var description = document.getElementById('description').value;
+            var comments = document.getElementById('comments').value;
             var author = document.getElementById('author').value;
             var image = document.getElementById('image').value;
 
@@ -64,7 +91,9 @@ layout: null
                 "author: \"" + author + "\"",
                 "image: \"" + image + "\"",
                 "---",
-                description
+                "Description: " + description,
+                "",
+                "Comments: " + comments
             ].join("\n");
 
             var blob = new Blob([markdown], {type: "text/plain;charset=utf-8"});
