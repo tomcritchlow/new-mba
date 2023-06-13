@@ -1,0 +1,38 @@
+
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+
+
+<input type="text" id="search" placeholder="Search">
+<div id="results"></div>
+
+<script>
+var index = lunr(function () {
+  this.field('title')
+  this.field('content')
+})
+
+var documents = {{ site.data.search | jsonify }}
+
+documents.forEach(function (doc) {
+  index.add(doc)
+})
+
+function search(query) {
+  return index.search(query).map(function (result) {
+    return documents.filter(function (page) {
+      return page.url === result.ref
+    })[0]
+  })
+}
+
+document.getElementById('search').addEventListener('input', function () {
+  var results = search(this.value)
+  var resultsDiv = document.getElementById('results')
+  resultsDiv.innerHTML = ''
+  results.forEach(function (result) {
+    var div = document.createElement('div')
+    div.innerHTML = '<a href="' + result.url + '">' + result.title + '</a>'
+    resultsDiv.appendChild(div)
+  })
+})
+</script>
