@@ -1,64 +1,40 @@
 
-<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
 
 <input type="text" id="search" placeholder="Search">
 <div id="results"></div>
 
 <script>
-var idx;
 var data;
+var fuse;
 
 fetch("https://newmba.co/search.json")
   .then(response => response.json())
   .then(fetchedData => {
     data = fetchedData;
-    console.log(data);
-    idx = lunr(function () {
-      this.ref('url')
-      this.field('title')
-      this.field('content')
 
-      data.forEach(function (doc) {
-        this.add(doc)
-      }, this)
-    })
+    var options = {
+      keys: ['title', 'content'],
+      includeScore: true,
+      threshold: 0.3 // Determine the sensitivity of the search. Lower the value, less fuzzy search will be.
+    }
+
+    fuse = new Fuse(data, options);
   });
-
-function search(query) {
-  // Split the query into words, add ~1 to each word, then join them back together
-  var fuzzyQuery = query.split(' ').map(function(word) {
-    return word + '~1';
-  }).join(' ');
-
-  var results = idx.search(fuzzyQuery);
-  console.log('Search query:', fuzzyQuery);
-  console.log('Search results:', results);
-
-  return results.map(function (result) {
-    return data.filter(function (page) {
-      return page.url === result.ref;
-    })[0];
-  });
-}
-
-
 
 document.getElementById('search').addEventListener('input', function () {
-  if (!idx) {
+  if (!fuse) {
     console.log('Index is not ready');
     return;
   }
-  var results = search(this.value)
-  console.log("Searching "+this.value)
+
+  var results = fuse.search(this.value);
   var resultsDiv = document.getElementById('results')
   resultsDiv.innerHTML = ''
-  console.log("Results "+results)
   results.forEach(function (result) {
-    if(result) {
-      var div = document.createElement('div')
-      div.innerHTML = '<a href="' + result.url + '">' + result.title + '</a>'
-      resultsDiv.appendChild(div)
-    }
+    var div = document.createElement('div')
+    div.innerHTML = '<a href="' + result.item.url + '">' + result.item.title + '</a>'
+    resultsDiv.appendChild(div)
   })
 })
 </script>
