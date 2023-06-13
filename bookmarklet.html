@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookmarklet Landing Page</title>
+</head>
+<body>
+    <form id="bookmarklet-form">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="url">URL:</label><br>
+        <input type="text" id="url" name="url"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author"><br>
+        <label for="image">Image URL:</label><br>
+        <input type="text" id="image" name="image"><br>
+        <input type="button" value="Generate .md File" onclick="generateMdFile()">
+    </form>
+    
+    <script>
+        // Parse the query string and populate the form
+        var urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('title').value = urlParams.get('title');
+        document.getElementById('url').value = urlParams.get('url');
+        document.getElementById('description').value = urlParams.get('description');
+        document.getElementById('author').value = urlParams.get('author');
+        document.getElementById('image').value = urlParams.get('image');
+        
+        function generateMdFile() {
+            var title = document.getElementById('title').value;
+            var url = document.getElementById('url').value;
+            var description = document.getElementById('description').value;
+            var author = document.getElementById('author').value;
+            var image = document.getElementById('image').value;
+
+            var markdown = [
+                "---",
+                "layout: post",
+                "title: \"" + title + "\"",
+                "url: \"" + url + "\"",
+                "type: Article",
+                "date_saved: " + new Date().toISOString().split('T')[0],
+                "tags: ",
+                "author: \"" + author + "\"",
+                "image: \"" + image + "\"",
+                "---",
+                description
+            ].join("\n");
+
+            var blob = new Blob([markdown], {type: "text/plain;charset=utf-8"});
+            var blobUrl = URL.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.href = blobUrl;
+            a.download = title.replace(/[^a-z0-9]/gi, '_').toLowerCase() + ".md";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+</html>
