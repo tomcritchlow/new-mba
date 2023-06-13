@@ -90,9 +90,9 @@
   });
   
 $('.mobilenavlink').on('click', function() {
-  alert("clicked");
-  $(this).find("svg").toggleClass("rotated");
-  //$(this).children('.mobilenavsubmenu').toggleClass("dn");
+  var el = $(this).find("svg");
+  el[0].classList.toggle("rotated");
+  $(this).children('.mobilenavsubmenu').toggleClass("dn");
   
 });
 
