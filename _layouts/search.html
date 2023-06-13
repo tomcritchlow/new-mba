@@ -12,6 +12,7 @@ fetch("https://newmba.co/search.json")
   .then(response => response.json())
   .then(fetchedData => {
     data = fetchedData;
+    console.log(data);
     idx = lunr(function () {
       this.field('title')
       this.field('content')
