@@ -36,8 +36,10 @@ document.getElementById('search').addEventListener('input', function () {
     return;
   }
   var results = search(this.value)
+  console.log("Searching "+this.value)
   var resultsDiv = document.getElementById('results')
   resultsDiv.innerHTML = ''
+  console.log("Results "+results)
   results.forEach(function (result) {
     if(result) {
       var div = document.createElement('div')
