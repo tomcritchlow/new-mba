@@ -24,14 +24,20 @@
 
 </div>
 
-{% for post in site.posts %}
+<div class="mw8 center">
 
-<div class="pv0 mv0">
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="f5 black-50 i">{{post.subtitle}}</span>
+    {% for post in site.posts %}
+
+    <div class="pv2 mv0">
+        <div class="f4"><a href="{{ post.url }}">{{ post.title }}</a></div>
+        <div class="f5">{{post.subtitle}}</div>
+    </div>
+    
+    {% endfor %}
+
 </div>
 
-{% endfor %}
+
 
 
 
