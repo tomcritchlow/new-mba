@@ -102,11 +102,10 @@ p, li, ul, ol, blockquote{
   margin-bottom: 0px;
 } 
 
-@keyframes spin {
-  from {transform:rotate(0deg);}
-  to {transform:rotate(180deg);}
+.chevron {
+  transition: transform 0.5s;
 }
 
 .rotated {
-  animation: spin 2s linear;
+  transform: rotate(180deg);
 }
