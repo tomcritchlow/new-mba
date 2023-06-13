@@ -4,9 +4,18 @@
 <input type="text" id="search" placeholder="Search">
 <div id="results"></div>
 
+<style>
+    .selected {
+      background-color: #f0f0f0;
+    }
+  </style>
+  
+
 <script>
 var data;
 var fuse;
+var currentSelection = -1;
+var resultItems = [];
 
 fetch("https://newmba.co/search.json")
   .then(response => response.json())
@@ -16,7 +25,7 @@ fetch("https://newmba.co/search.json")
     var options = {
       keys: ['title', 'content'],
       includeScore: true,
-      threshold: 0.3 // Determine the sensitivity of the search. Lower the value, less fuzzy search will be.
+      threshold: 0.3
     }
 
     fuse = new Fuse(data, options);
@@ -31,10 +40,44 @@ document.getElementById('search').addEventListener('input', function () {
   var results = fuse.search(this.value);
   var resultsDiv = document.getElementById('results')
   resultsDiv.innerHTML = ''
-  results.forEach(function (result) {
+  resultItems = [];
+
+  results.forEach(function (result, index) {
     var div = document.createElement('div')
     div.innerHTML = '<a href="' + result.item.url + '">' + result.item.title + '</a>'
     resultsDiv.appendChild(div)
+    resultItems.push(div);
   })
-})
+  
+  // Reset current selection
+  currentSelection = -1;
+});
+
+document.getElementById('search').addEventListener('keydown', function (e) {
+  if (e.key === 'ArrowUp') {
+    // If up arrow is pressed and there's a previous element, move to it
+    if (currentSelection > 0) {
+      resultItems[currentSelection].classList.remove('selected');
+      currentSelection--;
+      resultItems[currentSelection].classList.add('selected');
+    }
+    e.preventDefault();
+  } else if (e.key === 'ArrowDown') {
+    // If down arrow is pressed and there's a next element, move to it
+    if (currentSelection < (resultItems.length - 1)) {
+      if (currentSelection !== -1) {
+        resultItems[currentSelection].classList.remove('selected');
+      }
+      currentSelection++;
+      resultItems[currentSelection].classList.add('selected');
+    }
+    e.preventDefault();
+  } else if (e.key === 'Enter') {
+    // If enter is pressed, navigate to the selected search result
+    if (currentSelection !== -1) {
+      window.location.href = resultItems[currentSelection].firstChild.href;
+      e.preventDefault();
+    }
+  }
+});
 </script>
