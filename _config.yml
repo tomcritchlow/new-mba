@@ -3,3 +3,5 @@ permalink:        pretty
 collections:
   chapters:
     output: true
+  library:
+    output: true    
