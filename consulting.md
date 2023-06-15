@@ -5,18 +5,16 @@ layout: page
 ---
 
 <div class="flex">
-<div class="w-50">
-Narrative Strategy, is an approach that recognizes that positioning is as important as the decision.
+<div class="w-50 f3 cormorant">
+For executives in times of transition, I help provide strategic clarity through a blended mixture of coaching and consulting. With a deep background in media, content & digital strategy we can create strategic plans, review P&Ls, build new capabilities and more.
 
-Strategy & Stewardship: recognizing that “execution” work is strategic and requires leadership.
-
-Executive Sparring: 1:1 work with leaders straddling inner/outer work to be a mixture of coaching and consulting.
+For teams seeking more influence, I can provide training, coaching and support to ensure your work is having the right impact internally.
 </div>
-<div class="w-50">
-<img src="/images/clients/angi.svg">
-<img src="/images/clients/dotdash.svg">
-<img src="/images/clients/finder.svg">
-<img src="/images/clients/nyt.svg">
-<img src="/images/clients/google.svg">
+<div class="w-50 tc">
+<img class="h3 pv2" src="/images/clients/angi.svg">
+<img class="h3 pv2" src="/images/clients/dotdash.svg">
+<img class="h3 pv2" src="/images/clients/gartner.svg">
+<img class="h3 pv2" src="/images/clients/nyt.svg">
+<img class="h3 pv2" src="/images/clients/google.svg">
 </div>
 </div>
