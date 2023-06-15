@@ -1,26 +1,5 @@
 ---
 title: Consulting
 subtitle: For executives seeking clarity in strategy, innovation in product and confidence in leadership
-layout: page
+layout: consulting
 ---
-
-<div class="flex">
-<div class="w-50 f3 nunito">
-<span class="newmba-green">For executives</span> in times of transition, I help provide strategic clarity through a blended mixture of coaching and consulting. With a deep background in media, content & digital strategy we can create strategic plans, review P&Ls, build new capabilities and more.
-<br><br>
-<span class="newmba-green">For teams</span> seeking more influence, I can provide training, coaching and support to ensure your work is having the right impact internally.
-</div>
-<div class="w-50 tc">
-<img class="h3 pv2" src="/images/clients/angi.svg">
-<img class="h3 pv2" src="/images/clients/dotdash.svg">
-<img class="h3 pv2" src="/images/clients/gartner.svg">
-<img class="h3 pv2" src="/images/clients/nyt.svg">
-<img class="h3 pv2" src="/images/clients/google.svg">
-</div>
-</div>
-
-<div class="bg--newmba-offwhite">
-<div class="mw6 center f1 cormorant i tc pv4">
-“Tom is a 'CEO Whisperer'. He is truly a world-class listener and mentor who knows how to knock down walls inside companies to get strategic projects delivered.”
-</div>
-</div>
