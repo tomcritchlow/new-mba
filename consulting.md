@@ -18,3 +18,9 @@ layout: page
 <img class="h3 pv2" src="/images/clients/google.svg">
 </div>
 </div>
+
+<div class="bg--newmba-offwhite">
+<div class="mw6 center f1 cormorant i tc pv4">
+“Tom is a 'CEO Whisperer'. He is truly a world-class listener and mentor who knows how to knock down walls inside companies to get strategic projects delivered.”
+</div>
+</div>
