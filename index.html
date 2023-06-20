@@ -41,8 +41,20 @@ title: The NEW MBA
 <div class="bg-newmba-offwhite black w-100">
   <div class="mw8 center pv4 bt b--newmba-green">
     <h2 class="cormorant f1">Latest Writing</h2>
+    
+
+      {% for post in site.posts %}
+  
+      <div class="pv2 mv0">
+          <div class="f4"><a href="{{ post.url }}">{{ post.title }}</a></div>
+          <div class="f5">{{post.subtitle}}</div>
+      </div>
+      
+      {% endfor %}
+  
   </div>
-</div>
+
+  </div>
 
 
 
