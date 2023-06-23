@@ -1,6 +1,6 @@
 {% include head.html %}
 
-<div class="mw9 w-100 ph2 ph4-l flex pv2 bb b--newmba-green items-center h3 justify-between center navcontainer newmba-offwhite bg-newmba-dark-green">
+<div class="mw9 w-100 ph2 ph4-l flex pv2 bb b--newmba-green items-center h3 justify-between center navcontainer newmba-offwhite bg-newmba-dark-green" style="position:sticky">
   <img src="/images/library-logo-white.svg"/>
 
   <div class="">
@@ -28,7 +28,7 @@
 
         <div class="">
 
-          <div class="pa4">
+          <div class="">
             <div class="overflow-auto">
               <table class="f6 w-100 mw8 center" cellspacing="0">
                 <thead>
@@ -43,7 +43,10 @@
                 <tbody class="lh-copy">
                   {% for item in site.library %}
                   <tr>
-                    <td class="pv3 pr3 bb b--black-20">{{item.title}}</td>
+                    <td class="pv3 pr3 bb b--black-20">
+                      <a href="{{item.url}}">{{item.title}}</a>
+                      <span>{{ item.url | split: "//" | last | split: "/" | first }}</span>
+                    </td>
                     <td class="pv3 pr3 bb b--black-20">{{item.author}}</td>
                     <td class="pv3 pr3 bb b--black-20">
                       {% for tag in items.tags %}
@@ -74,5 +77,3 @@
 
 
 </div>
-
-{% include footer.html %}
