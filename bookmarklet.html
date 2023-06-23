@@ -80,6 +80,10 @@ GPT thread: https://chat.openai.com/share/6b7b8b31-24ba-47be-8f4c-65d7d10aebb6
                   </select>
             </div>
             <div class="measure">
+                <label for="tags" class="f6 b db mb2">Tags:</label>
+                <textarea id="tags" name="comments" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
+            </div>            
+            <div class="measure">
                 <label for="comments" class="f6 b db mb2">Comments:</label>
                 <textarea id="comments" name="comments" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
             </div>            
@@ -114,7 +118,7 @@ GPT thread: https://chat.openai.com/share/6b7b8b31-24ba-47be-8f4c-65d7d10aebb6
                 "link: \"" + link + "\"",
                 "type: \"" + type + "\"",
                 "date_saved: " + new Date().toISOString().split('T')[0],
-                "tags: ",
+                "tags: [\"" + tags + "\"]",
                 "author: \"" + author + "\"",
                 "image: \"" + image + "\"",
                 "description: \"" + description + "\"",
