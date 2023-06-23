@@ -1,24 +1,26 @@
-{% include head.html %}
+<div class="mw9 w-100 ph2 ph4-l flex pv2 bb b--newmba-green items-center h3 justify-between center navcontainer newmba-offwhite bg-newmba-dark-green">
+  <img src="/images/library-logo-white.svg"/>
+  <div class="">
+    <input id="librarysearch" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" placeholder="Search the library">
 
-{% include nav.html color="dark" %}
+  </div>
+  </div>
 
-<div class="bg-newmba-dark-green">
 
-<div class="newmba-offwhite w-100 pv4">
-    <div class="mw8 center ph2">
-      <div class="w-90">
-        <h1 class="headline cormorant fw5 mb2">NEW MBA Library</h1>
-        <h2 class="mt0 fw4 f2 cormorant"></h2>
-      </div>
-      {{page.content}}
-    </div>
+
+
+<div class="w-100">
+
+
+
+
+<div id="introtext">
+  Welcome to the NEW MBA Library, a curated resource of the best resources you can find.
 </div>
 
-Items:
-
-{% for item in site.library %}
-{{item.title}}
-{% endfor %}
+  {% for item in site.library %}
+  {{item.title}}
+  {% endfor %}
 
 
 </div>
