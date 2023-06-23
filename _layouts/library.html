@@ -44,7 +44,7 @@
                   {% for item in site.library %}
                   <tr>
                     <td class="pv3 pr3 bb b--black-20">
-                      <a href="{{item.url}}">{{item.title}}</a>
+                      <img src="https://www.google.com/s2/favicons?domain={{item.url}}"><a href="{{item.url}}">{{item.title}}</a>
                       <span>{{ item.url | split: "//" | last | split: "/" | first }}</span>
                     </td>
                     <td class="pv3 pr3 bb b--black-20">{{item.author}}</td>
