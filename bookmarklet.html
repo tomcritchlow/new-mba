@@ -14,15 +14,13 @@ GPT thread: https://chat.openai.com/share/6b7b8b31-24ba-47be-8f4c-65d7d10aebb6
     var authorMeta = document.querySelector('meta[name="author"]');
     var author = authorMeta ? authorMeta.content : "";
     var ogImage = (document.querySelector('meta[property="og:image"]') || {}).content;
-    var comments = window.getSelection().toString() || {};
 
     var data = {
         title: title,
         link: link,
         description: description,
         author: author,
-        image: ogImage || "",
-        commments = comments;
+        image: ogImage || ""
     };
     
     var queryString = new URLSearchParams(data).toString();
@@ -39,37 +37,44 @@ GPT thread: https://chat.openai.com/share/6b7b8b31-24ba-47be-8f4c-65d7d10aebb6
     <link rel="stylesheet" href="/css/tachyons.css">
 </head>
 <body class="pa4 sans-serif">
-    <div class="mw6 center">
-        <form id="bookmarklet-form" class="pa4 black-80">
-            <div class="measure">
-                <label for="title" class="f6 b db mb2">Title:</label>
-                <input type="text" id="title" name="title" class="input-reset ba b--black-20 pa2 mb2 db w-100">
-            </div>
-            <div class="measure">
-                <label for="link" class="f6 b db mb2">Link:</label>
-                <input type="text" id="link" name="link" class="input-reset ba b--black-20 pa2 mb2 db w-100">
-            </div>
-            <div class="measure">
-                <label for="description" class="f6 b db mb2">Description:</label>
-                <textarea id="description" name="description" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
-            </div>
+    <div class="flex mw8 center">
+        <div class="w-50">
+            <form id="bookmarklet-form" class="pa4 black-80">
+                <div class="measure">
+                    <label for="title" class="f6 b db mb2">Title:</label>
+                    <input type="text" id="title" name="title" class="input-reset ba b--black-20 pa2 mb2 db w-100">
+                </div>
+                <div class="measure">
+                    <label for="link" class="f6 b db mb2">Link:</label>
+                    <input type="text" id="link" name="link" class="input-reset ba b--black-20 pa2 mb2 db w-100">
+                </div>
+                <div class="measure">
+                    <label for="description" class="f6 b db mb2">Description:</label>
+                    <textarea id="description" name="description" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
+                </div>
+
+                <div class="measure">
+                    <label for="author" class="f6 b db mb2">Author:</label>
+                    <input type="text" id="author" name="author" class="input-reset ba b--black-20 pa2 mb2 db w-100">
+                </div>
+                <div class="measure">
+                    <label for="image" class="f6 b db mb2">Image URL:</label>
+                    <input type="text" id="image" name="image" class="input-reset ba b--black-20 pa2 mb2 db w-100">
+                </div>
+                <div class="measure">
+                    <input type="button" value="Generate .md File" onclick="generateMdFile()" class="input-reset ba b--black bg-transparent grow pointer f6 dib">
+                </div>
+            </form>
+        </div>
+        <div class="w-50">
             <div class="measure">
                 <label for="comments" class="f6 b db mb2">Comments:</label>
                 <textarea id="comments" name="comments" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
             </div>
-            <div class="measure">
-                <label for="author" class="f6 b db mb2">Author:</label>
-                <input type="text" id="author" name="author" class="input-reset ba b--black-20 pa2 mb2 db w-100">
-            </div>
-            <div class="measure">
-                <label for="image" class="f6 b db mb2">Image URL:</label>
-                <input type="text" id="image" name="image" class="input-reset ba b--black-20 pa2 mb2 db w-100">
-            </div>
-            <div class="measure">
-                <input type="button" value="Generate .md File" onclick="generateMdFile()" class="input-reset ba b--black bg-transparent grow pointer f6 dib">
-            </div>
-        </form>
+
+        </div>
     </div>
+
     
     <script>
         // Parse the query string and populate the form
