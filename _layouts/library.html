@@ -44,8 +44,8 @@
                   {% for item in site.library %}
                   <tr>
                     <td class="pv3 pr3 bb b--black-20">
-                      <img src="https://www.google.com/s2/favicons?domain={{item.url}}"><a href="{{item.url}}">{{item.title}}</a>
-                      <span>{{ item.url | split: "//" | last | split: "/" | first }}</span>
+                      <img src="https://www.google.com/s2/favicons?domain={{item.link}}"><a href="{{item.link}}">{{item.title}}</a>
+                      <span>{{ item.link | split: "//" | last | split: "/" | first }}</span>
                     </td>
                     <td class="pv3 pr3 bb b--black-20">{{item.author}}</td>
                     <td class="pv3 pr3 bb b--black-20">
