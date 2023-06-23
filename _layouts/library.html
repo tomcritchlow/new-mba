@@ -16,18 +16,32 @@
 
 
 
-<div class="w-100">
+
+<div class="bg-newmba-offwhite">
+
+  <div class=" w-100 pv4">
+      <div class="mw8 center ph2">
+        <div class="w-90">
+          <h1 class="headline cormorant fw5 mb2">Welcome to the NEW MBA Library</h1>
+          <h2 class="mt0 fw4 f2 cormorant">A curated list of the best career resources</h2>
+        </div>
+
+        <div class="">
+          {% for item in site.library %}
+          {{item.title}}
+          {% endfor %}
+        </div>
+        
+
+      </div>
+  </div>
 
 
 
 
-<div id="introtext">
-  Welcome to the NEW MBA Library, a curated resource of the best resources you can find.
-</div>
 
-  {% for item in site.library %}
-  {{item.title}}
-  {% endfor %}
+
+  
 
 
 </div>
