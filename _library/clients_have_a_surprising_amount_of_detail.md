@@ -5,7 +5,7 @@ url: "https://tomcritchlow.com/2023/06/05/clients-detail/"
 type: Article
 date_saved: 2023-06-23
 tags: [one, two, three ish]
-author: ""
+author: "Tom Critchlow"
 image: "https://tomcritchlow.com/images/green.png"
 description: ""
 ---
