@@ -68,9 +68,21 @@ GPT thread: https://chat.openai.com/share/6b7b8b31-24ba-47be-8f4c-65d7d10aebb6
         </div>
         <div class="w-50">
             <div class="measure">
+                <label for="type" class="f6 b db mb2">Type:</label>
+                <select name="type" id="type">
+                    <option value="article">Article</option>
+                    <option value="paper">Paper</option>
+                    <option value="video">Video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="book">Book</option>
+                    <option value="course">Course</option>
+                    <option value="website">Website</option>
+                  </select>
+            </div>
+            <div class="measure">
                 <label for="comments" class="f6 b db mb2">Comments:</label>
                 <textarea id="comments" name="comments" class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2"></textarea>
-            </div>
+            </div>            
 
         </div>
     </div>
@@ -93,13 +105,14 @@ GPT thread: https://chat.openai.com/share/6b7b8b31-24ba-47be-8f4c-65d7d10aebb6
             var comments = document.getElementById('comments').value;
             var author = document.getElementById('author').value;
             var image = document.getElementById('image').value;
+            var type = document.getElementById('type').value;
 
             var markdown = [
                 "---",
                 "layout: post",
                 "title: \"" + title + "\"",
                 "link: \"" + link + "\"",
-                "type: Article",
+                "type: \"" + type + "\"",
                 "date_saved: " + new Date().toISOString().split('T')[0],
                 "tags: ",
                 "author: \"" + author + "\"",
