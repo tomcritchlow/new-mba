@@ -36,7 +36,7 @@ GPT thread: https://chat.openai.com/share/6b7b8b31-24ba-47be-8f4c-65d7d10aebb6
     <title>Bookmarklet Landing Page</title>
     <link rel="stylesheet" href="/css/tachyons.css">
 </head>
-<body class="pa4 sans-serif">
+<body class="pa4 sans-serif mw8 center">
     <div class="flex mw8 center">
         <div class="w-50">
             <form id="bookmarklet-form" class="pa4 black-80 bg-washed-green">
@@ -90,7 +90,7 @@ GPT thread: https://chat.openai.com/share/6b7b8b31-24ba-47be-8f4c-65d7d10aebb6
 
         </div>
     </div>
-    <input type="button" value="Generate .md File" onclick="generateMdFile()" class="input-reset ba b--black bg-transparent grow pointer f6 dib">
+    <input type="button" value="Generate .md File" onclick="generateMdFile()" class="fr input-reset ba b--black bg-transparent grow pointer f6 dib">
 
     
     <script>
@@ -125,9 +125,7 @@ GPT thread: https://chat.openai.com/share/6b7b8b31-24ba-47be-8f4c-65d7d10aebb6
                 "image: \"" + image + "\"",
                 "description: \"" + description + "\"",
                 "---",
-                "",
-                "Comments: " + comments
-            ].join("\n");
+                comments;
 
             var blob = new Blob([markdown], {type: "text/plain;charset=utf-8"});
             var blobUrl = URL.createObjectURL(blob);
