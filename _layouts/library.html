@@ -44,8 +44,8 @@
                   {% for item in site.library %}
                   <tr>
                     <td class="pv3 pr3 bb b--black-20">
-                      <div class="flex">
-                        <img src="https://www.google.com/s2/favicons?domain={{item.link}}">
+                      <div class="flex items-top">
+                        <img class="pr2 pt1 h2" src="https://www.google.com/s2/favicons?domain={{item.link}}">
                         <div class="">
                           <a target="_blank" href="{{item.link}}">{{item.title}}</a>
                           <br><span>{{ item.link | split: "//" | last | split: "/" | first }}</span>
