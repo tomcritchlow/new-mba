@@ -23,3 +23,14 @@ If you’re lucky you have a good boss who can help guide you through this messy
 My aspiration with the NEW MBA is champion soft power and soft skills - to say another way, to make the glue between the work as important as the work itself.
 
 Communication, influence, positioning. These matter. There’s no abstract “strategy” that you can learn that doesn’t relate to the human dynamics beneath.
+
+## About Tom Critchlow
+
+The NEW MBA is run by Tom Critchlow. How did I get here?
+
+Some highlights;
+
+* Started my career in SEO, back when white text on a white background was cool
+* Crafted presentations at Google for Sundar Pichai
+* Launched the SEO MBA in 201
+
