@@ -1,0 +1,48 @@
+<meta property="og:type"   content="article" />
+<meta property="og:url"    content="https://newmba.co{{page.url}}" />
+
+ {% if page.title %}
+ <meta property="og:title"  content="{{page.title}}" />
+ {% else %}
+ <meta property="og:title"  content="The NEW MBA" />
+ {% endif %}
+
+ {% if page.title %}
+ <meta property="og:description"  content="{{page.subtitle}}" />
+ {% else %}
+ <meta property="og:description"  content="See the world of work in new ways" />
+ {% endif %}
+ 
+ {% if page.og %}
+ <meta property="og:image"  content="{{page.og}}" />
+ {% else %}
+ <meta property="og:image"  content="https://newmba.co/images/og.png" />
+ {% endif %}
+
+ 
+ <meta property="og:image:width"  content="600" />
+ <meta property="og:image:height"  content="315" />
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tomcritchlow">
+<meta name="twitter:creator" content="@tomcritchlow">
+
+{% if page.title %}
+<meta name="twitter:title" content="{{page.title}}">
+ {% else %}
+ <meta name="twitter:title" content="The NEW MBA">
+ {% endif %}
+
+ {% if page.subtitle %}
+ <meta name="twitter:description" content="{{page.subtitle}}">
+ {% else %}
+ <meta name="twitter:description" content="See the world of work in new ways">
+ {% endif %}
+
+{% if page.og %}
+ <meta property="twitter:image"  content="{{page.og}}" />
+ {% else %}
+ <meta name="twitter:image" content="https://newmba.co/images/og.png">
+ {% endif %}
