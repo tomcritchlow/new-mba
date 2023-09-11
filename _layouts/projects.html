@@ -17,22 +17,26 @@ Breadcrumb goes here > something > something
       </div>
       
     </div>
-</div>
 
-{% for project in page.projects %}
+    {% for project in page.projects %}
 
-<div class="flex bt b--newmba-green">
-    <div class="w-50-l">
-        <h2>{{project.title}}</h2>
-        <div class="">{{project.subtitle}}</div>
-        <p>{{project.description}}</p>
+    <div class="flex bt b--newmba-green">
+        <div class="w-50-l">
+            <h2>{{project.title}}</h2>
+            <div class="">{{project.subtitle}}</div>
+            <p>{{project.description}}</p>
+        </div>
+        <div class="w-50-l">
+            <img src="/projects/{{project.image}}" />
+        </div>    
     </div>
-    <div class="w-50-l">
-        <img src="/projects/{{project.image}}" />
-    </div>    
+    
+    {% endfor %}
+
+
 </div>
 
-{% endfor %}
+
 
 </div>
 
