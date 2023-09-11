@@ -6,7 +6,8 @@ projects:
  - title: Sketches of Spain
    subtitle: Working with the NYT
    description: Something something
+   image: urltoimage
  - title: Project 2
    subtitle: Worked on something
-   description: Some thing 
+   description: Some thing    
 ---
