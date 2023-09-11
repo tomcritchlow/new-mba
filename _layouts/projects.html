@@ -17,13 +17,13 @@
       
       {% for project in page.projects %}
 
-      <div class="flex bt b--newmba-green">
-          <div class="w-50-l">
-              <h2>{{project.title}}</h2>
-              <div class="">{{project.subtitle}}</div>
+      <div class="flex bt b--newmba-green pv4">
+          <div class="w-50-l pr3-l">
+              <h2 class="cormorant fw4 f2 mb1">{{project.title}}</h2>
+              <div class="cormorant i f3">{{project.subtitle}}</div>
               <p>{{project.description}}</p>
           </div>
-          <div class="w-50-l">
+          <div class="w-50-l pl3-l">
               <img src="/images/projects/{{project.image}}" />
           </div>    
       </div>
