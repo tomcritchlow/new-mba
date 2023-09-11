@@ -6,7 +6,7 @@
 
 Breadcrumb goes here > something > something
 
-<div class="newmba-offwhite w-100 pv4">
+<div class=" w-100 pv4">
     <div class="mw8 center ph2">
       <div class="w-90">
         <h1 class="headline cormorant fw5 mb2">{{page.title}}</h1>
@@ -20,10 +20,18 @@ Breadcrumb goes here > something > something
 </div>
 
 {% for project in page.projects %}
-{{project.title}}
-{{project.subtitle}}
-{{project.description}}
-{{project.image}}
+
+<div class="flex bt b--newmba-green">
+    <div class="w-50-l">
+        <h2>{{project.title}}</h2>
+        <div class="">{{project.subtitle}}</div>
+        <p>{{project.description}}</p>
+    </div>
+    <div class="w-50-l">
+        <img src="{{project.image}}" />
+    </div>    
+</div>
+
 {% endfor %}
 
 </div>
