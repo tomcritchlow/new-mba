@@ -46,7 +46,7 @@
         Title: {{item.title}}
         <br>Type: {{item.type}}
         <br>Tags: {% for tag in item.tags %}{{tag}}{% endfor %}
-        <a href="{{link.link}}" class="dib pa2 ba br2 b--newmba-green f6 ttu">Open Link</a>
+        <br><a href="{{link.link}}" class="pa2 ba br2 b--newmba-green f6 ttu">Open Link</a>
         <div>Notes: {{item.content | truncatewords: 75, "<a href=''>read more</a>"}}</div>
       </div>
     </div>
