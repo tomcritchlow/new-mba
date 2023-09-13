@@ -75,15 +75,15 @@
   <!--Table-->
   <div class="">
     {% for item in site.library %}
-    <div class="expandable">
+    <div class="expandable dim pointer pv2 bt bb b--newmba-green">
       <div class="w-30">{{item.title}}</div>
       <div class="w-20"><img class="pr2 pt1" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
       <div class="w-20">{{item.type}}</div>
       <div class="w-20">Tags</div>
       <div class="w-10">+</div>
     </div>
-    <div class="hidden-row dn`">
-
+    <div class="hidden-row dn">
+      Something hidden
     </div>
     {% endfor %}
   </div>
@@ -99,7 +99,12 @@
 </div>
 
 <script>
-
+$(document).ready(function() {
+  $(".expandable").click(function() {
+    // Toggle the next row
+    $(this).next('.hidden-row').toggle();
+  });
+});
 </script>
 
 {% include footer.html %}
