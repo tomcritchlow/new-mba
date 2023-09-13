@@ -19,7 +19,7 @@
   <div class="">
     <div class="overflow-auto">
       <table class="f6 w-100 center" cellspacing="0">
-        <thead>
+        <thead class="newmba-green">
           <tr>
             <th class="fw6 bb b--black-20 tl pb3 pr3">Title</th>
             <th class="fw6 bb b--black-20 tl pb3 pr3">Author</th>
@@ -28,7 +28,7 @@
             <th class="fw6 bb b--black-20 tl pb3 pr3">Notes</th>
           </tr>
         </thead>
-        <tbody class="lh-copy">
+        <tbody class="lh-copy bg-newmba-offwhite">
           {% for item in site.library %}
           <tr>
             <td class="pv3 pr3 bb b--black-20">
@@ -67,85 +67,3 @@
 
 
 
-
----- old
-
-
-{% include head.html %}
-
-<div class="mw9 w-100 ph2 ph4-l flex pv2 bb b--newmba-green items-center h3 justify-between center navcontainer newmba-offwhite bg-newmba-dark-green" style="position:sticky">
-  <img src="/images/library-logo-white.svg"/>
-
-  <div class="">
-    <input id="librarysearch" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text" placeholder="Search the library">
-
-  </div>
-
-  <div>
-    <a class="link newmba-offwhite" href="/">Back home	→</a>
-  </div>
-</div>
-
-
-
-
-
-<div class="bg-newmba-offwhite">
-
-  <div class=" w-100 pv4">
-      <div class="mw9 center ph2">
-        <div class="w-90">
-          <h1 class="f1 cormorant fw5 mb2">Welcome to the NEW MBA Library</h1>
-          <h2 class="mt0 fw4 f2 cormorant">A curated list of the best career resources</h2>
-        </div>
-
-        <div class="">
-
-          <div class="">
-            <div class="overflow-auto">
-              <table class="f6 w-100 center" cellspacing="0">
-                <thead>
-                  <tr>
-                    <th class="fw6 bb b--black-20 tl pb3 pr3">Title</th>
-                    <th class="fw6 bb b--black-20 tl pb3 pr3">Author</th>
-                    <th class="fw6 bb b--black-20 tl pb3 pr3">Tags</th>
-                    <th class="fw6 bb b--black-20 tl pb3 pr3">Type</th>
-                    <th class="fw6 bb b--black-20 tl pb3 pr3">Notes</th>
-                  </tr>
-                </thead>
-                <tbody class="lh-copy">
-                  {% for item in site.library %}
-                  <tr>
-                    <td class="pv3 pr3 bb b--black-20">
-                      <div class="flex items-top">
-                        <img class="pr2 pt1 h2" src="https://www.google.com/s2/favicons?domain={{item.link}}">
-                        <div class="">
-                          <a target="_blank" href="{{item.link}}">{{item.title}}</a>
-                          <br><span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span>
-                        </div>
-                      </div>
-                      
-                    </td>
-                    <td class="pv3 pr3 bb b--black-20">{{item.author}}</td>
-                    <td class="pv3 pr3 bb b--black-20">
-                      {% for tag in item.tags %}
-                      {{tag}}
-                      {% endfor %}
-                    </td>
-                    <td class="pv3 pr3 bb b--black-20">{{ page.content | number_of_words }}</td>
-                  </tr>                  
-                  {% endfor %}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-
-        </div>
-        
-
-      </div>
-  </div>
-
-
-</div>
