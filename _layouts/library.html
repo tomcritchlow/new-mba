@@ -68,9 +68,9 @@ $(document).ready(function() {
   $(".expandable").click(function() {
     $(this).toggleClass("bb");
     if ($(this).find(".plus").text() === '+') {
-          $(this).text('-');
+          $(this).find(".plus").text('-');
         } else {
-          $(this).text('+');
+          $(this).find(".plus").text('+');
         }
     $(this).next('.hidden-row').toggleClass("flex");
   });
