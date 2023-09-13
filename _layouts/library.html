@@ -47,7 +47,7 @@
         <br>Type: {{item.type}}
         <br>Tags: {% for tag in item.tags %}{{tag}}{% endfor %}
         <div>Notes: {{item.content}}</div>
-        <div class="pa2 ba br2 b--newmba-green f6 ttu">Open Link</div>
+        <div class="dib pa2 ba br2 b--newmba-green f6 ttu">Open Link</div>
       </div>
     </div>
     {% endfor %}
@@ -66,7 +66,7 @@
 <script>
 $(document).ready(function() {
   $(".expandable").click(function() {
-    // Toggle the next row
+    $(this).toggleClass("bb");
     $(this).next('.hidden-row').toggleClass("flex");
   });
 });
