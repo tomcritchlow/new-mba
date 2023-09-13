@@ -16,16 +16,15 @@
 
 <div class="w-100">
 
-  <div class="ph4">
+  <div class="">
     <div class="overflow-auto">
       <table class="f6 w-100 center" cellspacing="0">
         <thead class="newmba-green">
           <tr>
             <th class="fw6 bb b--black-20 tl pb3 pr3">Title</th>
-            <th class="fw6 bb b--black-20 tl pb3 pr3">Author</th>
+            <th class="fw6 bb b--black-20 tl pb3 pr3">Source</th>
             <th class="fw6 bb b--black-20 tl pb3 pr3">Tags</th>
             <th class="fw6 bb b--black-20 tl pb3 pr3">Type</th>
-            <th class="fw6 bb b--black-20 tl pb3 pr3">Notes</th>
           </tr>
         </thead>
         <tbody class="lh-copy bg-newmba-offwhite">
@@ -36,18 +35,20 @@
                 
                 <div class="">
                   <a target="_blank" href="{{item.link}}">{{item.title}}</a>
-                  <br><img class="pr2 pt1" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span>
                 </div>
               </div>
               
             </td>
-            <td class="pv3 pr3 bb b--black-20">{{item.author}}</td>
+
+            <td class="pv3 pr3 bb b--black-20"><img class="pr2 pt1" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></td>
+            
             <td class="pv3 pr3 bb b--black-20">
               {% for tag in item.tags %}
               {{tag}}
               {% endfor %}
             </td>
-            <td class="pv3 pr3 bb b--black-20">{{ page.content | number_of_words }}</td>
+            <td class="pv3 pr3 bb b--black-20">{{ page.type}}</td>
+            <td class="pv3 pr3 bb b--black-20">+</td>
           </tr>                  
           {% endfor %}
         </tbody>
