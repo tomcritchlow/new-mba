@@ -38,7 +38,7 @@
       <div class="w-10 tr">+</div>
     </div>
     <div class="hidden-row dn bg-newmba-offwhite pv3">
-      <div class="w-40 pv2 pl4">
+      <div class="w-40 pv2 ph4">
         <img src="{{item.image}}">
       </div>
 
@@ -46,7 +46,8 @@
         Title: {{item.title}}
         <br>Type: {{item.type}}
         <br>Tags: {% for tag in item.tags %}{{tag}}{% endfor %}
-        <br>Notes: {{item.content}}
+        <div>Notes: {{item.content}}</div>
+        <div class="pa2 ba br2 b--newmba-green f6 ttu">Open Link</div>
       </div>
     </div>
     {% endfor %}
