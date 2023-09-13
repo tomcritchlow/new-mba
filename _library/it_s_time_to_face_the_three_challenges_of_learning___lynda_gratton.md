@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "It’s Time to Face the Three Challenges of Learning | Lynda Gratton"
+title: "It’s Time to Face the Three Challenges of Learning"
 link: "https://sloanreview.mit.edu/article/its-time-to-face-the-three-challenges-of-learning/"
 type: "article"
 date_saved: 2023-09-13
 tags: [ "L&D" ]
-author: ""
+author: "Lynda Gratton"
 image: "https://sloanreview.mit.edu/wp-content/uploads/2023/06/2023-0626_Gratton_2400x1260-1200x630.jpg"
 description: "Learning needs to be personalized, presented in a hybrid manner, and focused on transferable skills."
 ---
