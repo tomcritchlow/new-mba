@@ -67,8 +67,8 @@
   <div class="newmba-green flex ph3">
     <div class="w-40">Title</div>
     <div class="w-10">Source</div>
-    <div class="w-10">Type</div>
-    <div class="w-30">Tags</div>
+    <div class="w-10 dn db-l">Type</div>
+    <div class="w-30 dn db-l">Tags</div>
     <div class="w-10"></div>
   </div>
 
@@ -78,12 +78,18 @@
     <div class="expandable dim pointer pv3 ph3 bt bb b--newmba-green flex bg-newmba-offwhite">
       <div class="w-40">{{item.title}}</div>
       <div class="w-10"><img class="pr2 pt1" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
-      <div class="w-10">{{item.type}}</div>
-      <div class="w-30">Tags</div>
+      <div class="w-10 dn db-l">{{item.type}}</div>
+      <div class="w-30 dn db-l">Tags</div>
       <div class="w-10">+</div>
     </div>
     <div class="hidden-row dn bg-newmba-offwhite pv3">
-      Something hidden
+      <div class="w-40 pv2">
+        <img src="{{item.image}}">
+      </div>
+
+      <div class="w-40">
+        Some more info here.
+      </div>
     </div>
     {% endfor %}
   </div>
