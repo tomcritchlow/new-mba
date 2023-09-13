@@ -82,7 +82,7 @@
       <div class="w-20 dn db-l">Tags</div>
       <div class="w-10 tr">+</div>
     </div>
-    <div class="hidden-row dn bg-newmba-offwhite pv3 flex">
+    <div class="hidden-row dn bg-newmba-offwhite pv3">
       <div class="w-40 pv2 pl4">
         <img src="{{item.image}}">
       </div>
@@ -111,7 +111,7 @@
 $(document).ready(function() {
   $(".expandable").click(function() {
     // Toggle the next row
-    $(this).next('.hidden-row').toggle();
+    $(this).next('.hidden-row').toggleClass("flex");
   });
 });
 </script>
