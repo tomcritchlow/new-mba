@@ -64,7 +64,7 @@
 <div class="w-100">
 
   <!--Header row-->
-  <div class="newmba-green flex ph3 f5 b">
+  <div class="newmba-green flex ph4 f5 b mw8">
     <div class="w-40">Title</div>
     <div class="w-20">Source</div>
     <div class="w-10 dn db-l">Type</div>
@@ -75,7 +75,7 @@
   <!--Table-->
   <div class="f6">
     {% for item in site.library %}
-    <div class="expandable dim pointer pv3 ph3 bt bb b--newmba-green flex bg-newmba-offwhite">
+    <div class="expandable dim pointer pv3 ph4 bt bb b--newmba-green flex bg-newmba-offwhite mw8">
       <div class="w-40">{{item.title}}</div>
       <div class="w-20"><img class="pr2 pt1" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
       <div class="w-10 dn db-l">{{item.type}}</div>
