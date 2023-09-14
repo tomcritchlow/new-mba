@@ -8,9 +8,20 @@
     <h1 class="nunito f1 fw6 lh-solid mv1 posttitle p-name">{{page.title}}</h1>
     <h2 class="nunito f3 fw4 lh-copy mt1 subtitle p-summary">{{page.subtitle}}</h1>
     <div class="bt bb pv3 b--newmba-green">
-        <div class="flex">
-            <img class="h2 br100" src="/images/tom-small.webp" />
-            <div>Tom Critchlow</div>
+        <div class="flex justify-between">
+
+            <div>
+                <img class="h2 br-100" src="/images/tom-small.webp" />
+                <div>Tom Critchlow
+                    <div>{{ post.date | date: "%B %-d, %Y" }}</div>
+                </div>
+            </div>
+
+            <div>
+                Share / Copy URL
+            </div>
+            
+
         </div>
     </div>
     <div class="content">
