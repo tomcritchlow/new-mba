@@ -39,9 +39,7 @@
 
     {% for post in site.posts %}
 
-    <div class="pv4 flex">
-        
-        <a href="{{post.url}}">
+    <a class="pv4 flex" href="{{post.url}}">
 
         <div class="w-third pr2-l">
             <img src="{{post.og}}" />
@@ -51,12 +49,11 @@
             
             <div class="f3">{{post.title}}</div>
             <div class="f4">{{post.subtitle}}</div>
-            <div class="black-50 f5">{{ post.date | date: "%B %-d, %Y" }}</div>
+            <div class="black-30 f5 tracked TTU">{{ post.date | date: "%B %-d, %Y" }}</div>
             
         </div>
 
-        </a>
-    </div>
+    </a>
 
     
     {% endfor %}
