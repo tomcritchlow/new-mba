@@ -33,16 +33,26 @@
 
 
 
-<div class="mw8 center ">
+<div class="mw8 center ph2">
 
-<div class="pv2">LATEST WRITING</div>
+<div class="pv2 tracked newmba-green">LATEST WRITING</div>
 
     {% for post in site.posts %}
 
-    <div class="pv2 mv0">
-        <div class="f4"><a href="{{ post.url }}">{{ post.title }}</a></div>
-        <div class="f5">{{post.subtitle}}</div>
+    <div class="pv4 flex">
+        
+        <div class="w-third">
+            <img src="{{post.og}}" />
+        </div>
+
+        <div class="w-two-thirds">
+            <div class="f3">{{post.title}}</div>
+            <div class="f4">{{post.subtitle}}</div>
+            <div class="">{{post.content | truncatewords: 50, "..."}}</div>
+        </div>
+
     </div>
+
     
     {% endfor %}
 
