@@ -94,6 +94,7 @@ $(document).ready(function() {
 document.getElementById('searchBox').addEventListener('input', function(e) {
   const searchTerm = e.target.value.toLowerCase(); // Convert search term to lower case
   const closebox = document.getElementById("closebox");
+  console.log(searchTerm.length);
   if(searchTerm.length > 0){
     closebox.classList.remove("dn");
   } else{
