@@ -2,26 +2,33 @@
 
 {% include nav.html color="dark" %}
 
+<div class="bg-newmba-dark-green">
 
-<div class="bg-newmba-dark-green newmba-offwhite">
-    <div class="flex mw8 center pv4">
+<div class="newmba-offwhite w-100 pv4">
+    <div class="mw8 center ph2">
+      <div class="w-90">
+        <h2 class="mt0 fw4 f2 cormorant">Writing</h2>
+        <div>Exploring how to be effective in the modern world of work</div>
 
-    <div class="w-50-l">
-        <h2>NEW MBA Blog</h2>
-        <div class="pt5">Join the free weekly newsletter</div>
-        <div class="flex pb5 w-50">
+        <div class="center flex-wrap tl mv4">
+            <div class="pv2 w-100">Join the free newsletter and get notified when it launches</div>  
+            <form
+            action="https://buttondown.email/api/emails/embed-subscribe/newmba"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/newmba', 'popupwindow')"
+            class="embeddable-buttondown-form flex items-center"
+          >
+            <input placeholder="Email Address" type="email" id="bd-email" name="email" class="w-75 f5 input-reset ba b--black-20 pv3 ph4 border-box br2 mr2">
+            <input type="submit" value="Submit" class="input-reset w-25 w-auto-ns bg-newmba-green black f5 pv3 ph4-l ph2 ba b--newmba-green bg-hover-mid-gray br2">
+          </form>
+    
+    
+          </div>
         
-        <input type="email" name="email" placeholder="Your Email Address" id="bd-email" class="input-reset ba b--black-10 fl black-80 bg-white pa2 pv3 lh-solid w-70 w-75-m w-70-l br2-ns br--left-ns">
-        <input type="submit" value="Subscribe" class="button-reset fl pv3 tc ba b--black-10 bg-animate bg-newmba-green newmba-offwhite pointer w-30 w-25-m w-30-l br2-ns br--right-ns">
-        </div>
+      </div>
+      
     </div>
-
-    <div class="w-50-l">
-        New? Start here
-    </div>
-
-    </div>
-
 </div>
 
 <div class="mw8 center">
