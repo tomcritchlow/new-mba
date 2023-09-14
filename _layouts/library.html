@@ -11,7 +11,7 @@
         <h2 class="mt0 fw4 f2 cormorant">A curated set of resources from the NEW MBA</h2>
         <div class="flex">
           <input type="text" id="searchBox" placeholder="Search items..." />
-          <div id="closebox pointer u f6">clear search</div>
+          <div id="closebox" class="pointer u f6">clear search</div>
         </div>
         
       </div>
@@ -113,6 +113,22 @@ document.getElementById('searchBox').addEventListener('input', function(e) {
       item.classList.add('dn'); // Hide item
       item.classList.remove('flex'); // Hide item
     }
+  });
+});
+
+// Event listener for the clear search link
+document.getElementById('closebox').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent default link action
+
+  // Clear the search box
+  const searchBox = document.getElementById('searchBox');
+  searchBox.value = '';
+
+  // Show all items
+  const items = document.querySelectorAll('.item');
+  items.forEach(function(item) {
+    item.classList.remove('dn');
+    item.classList.add('flex');
   });
 });
 </script>
