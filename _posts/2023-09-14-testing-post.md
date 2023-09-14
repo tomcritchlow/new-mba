@@ -1,6 +1,7 @@
 ---
 title: Testing a new post
 subtitle: Whatever this is
+og: https://newmba.co/images/og.png
 layout: post
 ---
 
