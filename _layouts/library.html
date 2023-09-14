@@ -46,9 +46,13 @@
         Title: {{item.title}}
         <br>Type: {{item.type}}
         <br>Tags: {% for tag in item.tags %}{{tag}}{% endfor %}
-        <br><a href="{{item.link}}" target="_blank" class="pa2 ba br2 b--newmba-green f6 ttu">Open Link</a>
-        {{item.url}}
-        <div>Notes: {{item.content | truncatewords: 75, "<a href='{{item.url}}'>read more</a>"}}</div>
+        <br><a href="{{item.link}}" target="_blank" class="dib pa2 ba br2 b--newmba-green f6 ttu">Open Link</a>
+        {% if item.content | number_of_words > 75 %}
+        <div>{{ item.content | truncatewords: 75 }} <a href="{{ item.url }}">read more</a></div>
+     {% else %}
+        <div>{{ item.content }}</div>
+     {% endif %}
+        
       </div>
     </div>
     {% endfor %}
