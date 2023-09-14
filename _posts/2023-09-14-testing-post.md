@@ -10,7 +10,7 @@ layout: post
 * something2
 " %}
 
-There’s an idea that starting a blog is harder than it used to be. That there used to be a way to write a few words, slap it online and wait for the traffic to roll in.
+There’s an idea that starting a blog is harder than it used to be. That there used to be a way to write a few words, slap it online and wait for the traffic to roll in. [some link](https://newmba.co/index-full/)
 
 I call BS. It’s not that it’s not true exactly - but that kind of thinking is living in the shadow of the Digg homepage.
 
