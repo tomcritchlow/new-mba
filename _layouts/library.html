@@ -9,7 +9,11 @@
       <div class="w-90">
         <img src="/images/library-logo-white.svg"/>
         <h2 class="mt0 fw4 f2 cormorant">A curated set of resources from the NEW MBA</h2>
-        <input type="text" id="searchBox" placeholder="Search items..." />
+        <div class="flex">
+          <input type="text" id="searchBox" placeholder="Search items..." />
+          <div id="closebox pointer u f6">clear search</div>
+        </div>
+        
       </div>
       
     </div>
@@ -89,6 +93,12 @@ $(document).ready(function() {
   // Event listener for the search box
 document.getElementById('searchBox').addEventListener('input', function(e) {
   const searchTerm = e.target.value.toLowerCase(); // Convert search term to lower case
+  const closebox = document.getElementById("closebox");
+  if(searchTerm.length > 0){
+    closebox.classList.remove("dn");
+  } else{
+    closebox.classList.add("dn");
+  }
   const items = document.querySelectorAll('.item'); // Get all items
 
   // Loop through all items and hide those that don't match the search term
