@@ -98,8 +98,10 @@ document.getElementById('searchBox').addEventListener('input', function(e) {
 
     if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm)) {
       item.classList.remove('dn'); // Show item
+      item.classList.add('flex'); // Show item
     } else {
       item.classList.add('dn'); // Hide item
+      item.classList.remove('flex'); // Hide item
     }
   });
 });
