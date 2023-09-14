@@ -2,6 +2,8 @@
 
 {% include nav.html color="dark" %}
 
+<div class="bg-newmba-offwhite w-100">
+
 <div class="bg-newmba-offwhite w-100 pv4">
     <div class="mw8 center ph2">
       <div class="w-90">
@@ -9,7 +11,7 @@
         <h2 class="mt0 fw4 f2 cormorant">Inquiries into being effective in the modern world of work</h2>
       </div>
     
-      <div class="center flex-wrap tl mv4 w-50-l">
+      <div class="flex-wrap tl mv4 w-50-l">
         <div class="pv2 w-100">Join the free newsletter and get notified when it launches</div>  
         <form
         action="https://buttondown.email/api/emails/embed-subscribe/newmba"
@@ -31,7 +33,9 @@
 
 
 
-<div class="mw8 center bg-newmba-offwhite">
+<div class="mw8 center ">
+
+<div class="pv2">LATEST WRITING</div>
 
     {% for post in site.posts %}
 
@@ -44,6 +48,6 @@
 
 </div>
 
-
+</div>
 
 {% include footer.html %}
