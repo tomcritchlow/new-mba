@@ -41,18 +41,21 @@
 
     <div class="pv4 flex">
         
+        <a href="{{post.url}}">
+
         <div class="w-third pr2-l">
             <img src="{{post.og}}" />
         </div>
 
         <div class="w-two-thirds pl2-l">
-            <a href="{{post.url}}">
+            
             <div class="f3">{{post.title}}</div>
             <div class="f4">{{post.subtitle}}</div>
-            <div class="black-50 f5">{{ page.date | date: "%B %-d, %Y" }}</div>
-            </a>
+            <div class="black-50 f5">{{ post.date | date: "%B %-d, %Y" }}</div>
+            
         </div>
 
+        </a>
     </div>
 
     
