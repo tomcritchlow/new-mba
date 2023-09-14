@@ -7,19 +7,19 @@
 <div class="mw7 ph3 center mt5">
     <h1 class="nunito f1 fw6 lh-solid mv1 posttitle p-name">{{page.title}}</h1>
     <h2 class="nunito f3 fw4 lh-copy mt1 subtitle p-summary">{{page.subtitle}}</h1>
-    <div class="bt bb pv3 b--newmba-green">
+    <div class="bt bb pv3 b--black-10">
         <div class="flex justify-between items-center">
 
             <div class="flex items-center">
                 <img class="h2 br-100" src="/images/tom-small.webp" />
                 <div>
-                    <div>Tom Critchlow</div>
-                    <div>{{ page.date | date: "%B %-d, %Y" }}</div>
+                    <div class="f7 ttu pv1">Tom Critchlow</div>
+                    <div class="f7 black-50">{{ page.date | date: "%B %-d, %Y" }}</div>
                 </div>
             </div>
 
-            <div>
-                <div class="br-pill black-50 f6">Share</div>
+            <div class="flex items-center">
+                <div class="br-pill black-50 f6 ba ph2 pv1 dim link" id="">Share</div>
                 <div class="br-100"><img src="/images/link.svg" /></div>
             </div>
             
@@ -46,5 +46,6 @@
 
 
 </div>
+
 
 {% include footer.html %}
