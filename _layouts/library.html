@@ -31,7 +31,7 @@
   <!--Table-->
   <div class="f6">
     {% for item in site.library %}
-    <div class="expandable dim pointer pv3 ph4 bt bb b--newmba-green flex bg-newmba-offwhite mw9 center" data-item-title="{{item.title}}" data-item-source="{{item.link}}">
+    <div class="expandable dim pointer pv3 ph4 bt bb b--newmba-green flex bg-newmba-offwhite mw9 center item" data-item-title="{{item.title}}" data-item-source="{{item.link}}">
       <div class="w-40">{{item.title}}</div>
       <div class="w-20"><img class="pr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
       <div class="w-10 dn db-l">{{item.type}}</div>
