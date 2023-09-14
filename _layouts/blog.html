@@ -12,7 +12,7 @@
       </div>
     
       <div class="flex-wrap tl mv4 w-50-l">
-        <div class="pv2 w-100">Join the free newsletter and get notified when it launches</div>  
+        <div class="pv2 w-100">Join the free weekly newsletter</div>  
         <form
         action="https://buttondown.email/api/emails/embed-subscribe/newmba"
         method="post"
@@ -41,14 +41,14 @@
 
     <div class="pv4 flex">
         
-        <div class="w-third">
+        <div class="w-third pr2-l">
             <img src="{{post.og}}" />
         </div>
 
-        <div class="w-two-thirds">
+        <div class="w-two-thirds pl2-l">
             <div class="f3">{{post.title}}</div>
             <div class="f4">{{post.subtitle}}</div>
-            <div class="">{{post.content | truncatewords: 50, "..."}}</div>
+            <div class="black-50 f5">{{ page.date | date: "%B %-d, %Y" }}</div>
         </div>
 
     </div>
