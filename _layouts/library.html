@@ -9,9 +9,9 @@
       <div class="w-90">
         <img src="/images/library-logo-white.svg"/>
         <h2 class="mt0 fw4 f2 cormorant">A curated set of resources from the NEW MBA</h2>
-        <div class="flex">
+        <div class="flex items-center">
           <input type="text" id="searchBox" placeholder="Search items..." />
-          <div id="closebox" class="pointer u f6 dn">clear search</div>
+          <div id="closebox" class="pointer underline f7 dn pl2">clear</div>
         </div>
         
       </div>
@@ -94,7 +94,8 @@ $(document).ready(function() {
 document.getElementById('searchBox').addEventListener('input', function(e) {
   const searchTerm = e.target.value.toLowerCase(); // Convert search term to lower case
   const closebox = document.getElementById("closebox");
-  console.log(searchTerm.length);
+
+  // show/hide the "clear search" link
   if(searchTerm.length > 0){
     closebox.classList.remove("dn");
   } else{
@@ -124,6 +125,8 @@ document.getElementById('closebox').addEventListener('click', function(e) {
   // Clear the search box
   const searchBox = document.getElementById('searchBox');
   searchBox.value = '';
+  e.target.classList.add("dn");
+
 
   // Show all items
   const items = document.querySelectorAll('.item');
