@@ -9,6 +9,7 @@
       <div class="w-90">
         <img src="/images/library-logo-white.svg"/>
         <h2 class="mt0 fw4 f2 cormorant">A curated set of resources from the NEW MBA</h2>
+        <input type="text" id="searchBox" placeholder="Search items..." />
       </div>
       
     </div>
@@ -19,7 +20,7 @@
 <div class="w-100">
 
   <!--Header row-->
-  <div class="newmba-green flex ph4 f5 b mw9 center">
+  <div class="newmba-green flex ph4 pv3 f5 b mw9 center">
     <div class="w-40">Title</div>
     <div class="w-20">Source</div>
     <div class="w-10 dn db-l">Type</div>
@@ -30,7 +31,7 @@
   <!--Table-->
   <div class="f6">
     {% for item in site.library %}
-    <div class="expandable dim pointer pv3 ph4 bt bb b--newmba-green flex bg-newmba-offwhite mw9 center">
+    <div class="expandable dim pointer pv3 ph4 bt bb b--newmba-green flex bg-newmba-offwhite mw9 center" data-item-title="{{item.title}}" data-item-source="{{item.link}}">
       <div class="w-40">{{item.title}}</div>
       <div class="w-20"><img class="pr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
       <div class="w-10 dn db-l">{{item.type}}</div>
@@ -68,6 +69,7 @@
 
 </div>
 
+<!--Open/Close items-->
 <script>
 $(document).ready(function() {
   $(".expandable").click(function() {
@@ -78,6 +80,27 @@ $(document).ready(function() {
           $(this).find(".plus").text('+');
         }
     $(this).next('.hidden-row').toggleClass("flex");
+  });
+});
+</script>
+
+<!--Search box-->
+<script>
+  // Event listener for the search box
+document.getElementById('searchBox').addEventListener('input', function(e) {
+  const searchTerm = e.target.value.toLowerCase(); // Convert search term to lower case
+  const items = document.querySelectorAll('.item'); // Get all items
+
+  // Loop through all items and hide those that don't match the search term
+  items.forEach(function(item) {
+    const itemTitle = item.getAttribute('data-item-title').toLowerCase(); // Convert title to lower case
+    const itemSource = item.getAttribute('data-item-source').toLowerCase(); // Convert source to lower case
+
+    if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm)) {
+      item.classList.remove('dn'); // Show item
+    } else {
+      item.classList.add('dn'); // Hide item
+    }
   });
 });
 </script>
