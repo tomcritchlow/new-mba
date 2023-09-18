@@ -19,8 +19,14 @@
             </div>
 
             <div class="flex items-center">
-                <div class="br-pill black-50 f6 ba ph2 pv1 dim link mr2" id="">Share</div>
-                <div class="br-100 ba black-50"><img src="/images/link.svg" /></div>
+                <div class="br-pill black-50 f6 ba ph3 pv2 dim link mr2" id="shareBtn">Share
+                    <div id="shareDropdown" class="dn absolute pa2 ba black-50">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                      </div>
+                    
+                </div>
             </div>
             
 
@@ -57,5 +63,39 @@
 
 </div>
 
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  const shareBtn = document.getElementById('shareBtn');
+  const shareDropdown = document.getElementById('shareDropdown');
+
+  shareBtn.addEventListener('click', function() {
+    
+      if (navigator.share) {
+        navigator.share({
+          title: 'My Website',
+          text: 'Check out my website.',
+          url: window.location.href,
+        });
+      } else {
+        toggleDropdown();
+      }
+    
+  });
+
+
+
+  function toggleDropdown() {
+    if (shareDropdown.classList.contains('hidden')) {
+      shareDropdown.classList.remove('hidden');
+    } else {
+      shareDropdown.classList.add('hidden');
+    }
+  }
+});
+
+
+</script>
 
 {% include footer.html %}
