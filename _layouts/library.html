@@ -96,8 +96,9 @@ document.getElementById('searchBox').addEventListener('input', function(e) {
   const closebox = document.getElementById("closebox");
 
   //scroll so input box at top of page (TODO make sticky?)
+  const inputRect = e.target.getBoundingClientRect();
   window.scrollTo({
-      top: e.top + window.pageYOffset,
+      top: inputRect.top + window.pageYOffset,
       behavior: 'smooth'
     });
 
