@@ -10,7 +10,7 @@
         <img src="/images/library-logo-white.svg"/>
         <h2 class="mt0 fw4 f2 cormorant">A curated set of resources from the NEW MBA</h2>
         <div class="flex items-center">
-          <input type="text" id="searchBox" placeholder="Search items..." />
+          <input type="text" id="searchBox" placeholder="Search items..." class="pa2 i w-50-l" />
           <div id="closebox" class="pointer underline f7 dn pl2">clear</div>
         </div>
         
@@ -94,6 +94,12 @@ $(document).ready(function() {
 document.getElementById('searchBox').addEventListener('input', function(e) {
   const searchTerm = e.target.value.toLowerCase(); // Convert search term to lower case
   const closebox = document.getElementById("closebox");
+
+  //scroll so input box at top of page (TODO make sticky?)
+  window.scrollTo({
+      top: inputRect.top + window.pageYOffset,
+      behavior: 'smooth'
+    });
 
   // show/hide the "clear search" link
   if(searchTerm.length > 0){
