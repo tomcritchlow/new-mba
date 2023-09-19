@@ -66,23 +66,28 @@ Thanks, <a class="newmba-green link" href="https://tomcritchlow.com/">Tom</a>
     
 
       {% for post in site.posts %}
-  
-      <div class="pv2 mv0">
-          <div class="f4"><a href="{{ post.url }}">{{ post.title }}</a></div>
-          <div class="f5">{{post.subtitle}}</div>
-      </div>
+
+      
+      
+      <a class="pv4 flex link black dim w-third-l w-100" href="{{post.url}}">
+
+        <div class="w-third pr2-l">
+            <img src="{{post.og}}" />
+        </div>
+
+        <div class="w-two-thirds pl2-l">
+            
+            <div class="f2">{{post.title}}</div>
+            <div class="f3">{{post.subtitle}}</div>
+            <div class="black-30 f5 tracked TTU pt3">{{ post.date | date: "%B %-d, %Y" }}</div>
+            
+        </div>
+
+    </a>
       
       {% endfor %}
   
   </div>
-
-  <div class="mw8 center pv4 bt b--newmba-green ">
-    <h2 class="cormorant f1">Courses</h2>
-    
-
-      Coming soon
-  
-  </div>  
 
   </div>
 
