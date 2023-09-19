@@ -65,16 +65,16 @@ Thanks, <a class="newmba-green link" href="https://tomcritchlow.com/">Tom</a>
     <h2 class="cormorant f1">Latest Writing <span class="f3"><a class="link newmba-green" href="/blog/">see all</a></span></h2>
     
     <div class="flex">
-      
+
       {% for post in site.posts %}
       
-      <a class="pv4 flex link black dim w-third-l w-100" href="{{post.url}}">
+      <a class="pv4 flex-wrap link black dim w-third-l w-100" href="{{post.url}}">
 
-        <div class="w-third pr2-l">
+        <div class="w-100 pr2-l">
             <img src="{{post.og}}" />
         </div>
 
-        <div class="w-two-thirds pl2-l">
+        <div class="w-100 pl2-l">
             
             <div class="f2">{{post.title}}</div>
             <div class="f3">{{post.subtitle}}</div>
