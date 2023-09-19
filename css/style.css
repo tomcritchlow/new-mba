@@ -97,6 +97,10 @@ p, li, ul, ol, blockquote{
     line-height: 1.6em;
 }
 
+p a, li a, ul a, ol a, blockquote a{
+  color:var(--newmba-green);
+}
+
 .content h1, .content h2, .content h3, .content h4{
   padding-top: 2rem;
   margin-bottom: 0px;
