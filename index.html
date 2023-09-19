@@ -64,10 +64,9 @@ Thanks, <a class="newmba-green link" href="https://tomcritchlow.com/">Tom</a>
   <div class="mw8 center pv4 bt b--newmba-green bb b--newmba-green">
     <h2 class="cormorant f1">Latest Writing <span class="f3"><a class="link newmba-green" href="/blog/">see all</a></span></h2>
     
-
-      {% for post in site.posts %}
-
+    <div class="flex">
       
+      {% for post in site.posts %}
       
       <a class="pv4 flex link black dim w-third-l w-100" href="{{post.url}}">
 
@@ -86,6 +85,7 @@ Thanks, <a class="newmba-green link" href="https://tomcritchlow.com/">Tom</a>
     </a>
       
       {% endfor %}
+    </div>
   
   </div>
 
