@@ -17,9 +17,17 @@ title: The NEW MBA
     <div class="pb5 w-50-l center flex-wrap-l tl-l pv4 mv4">
       <div class="pv2 w-100">Get the free weekly newsletter</div>  
       <div class="flex">
+        <form
+        action="https://buttondown.email/api/emails/embed-subscribe/newmba"
+        method="post"
+        target="popupwindow"
+        onsubmit="window.open('https://buttondown.email/newmba', 'popupwindow')"
+        class="embeddable-buttondown-form flex items-center"
+      >
         <input placeholder="Email Address" class="w-75-l f5 input-reset ba b--black-20 pv3 ph4 border-box br2">
         <input type="hidden" name="metadata__signup-box">
         <input type="submit" class="input-reset w-auto-ns bg-newmba-green black f5 pv2 pv3-ns ph4 ba b--newmba-green bg-hover-mid-gray br2">
+        </form>
     </div>
     </div>
     </div>
