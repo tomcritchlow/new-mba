@@ -26,8 +26,6 @@ Communication, influence, positioning. These matter. There’s no abstract “st
 
 ## About Tom Critchlow
 
-<h2 class="cormorant f1">About Tom Critchlow</h2>  
-
 <div class="flex">
 <div class="w-third-l pr2-l ph2">
 <img class="ba2 shadow-5" src="/images/tom.jpg" />
