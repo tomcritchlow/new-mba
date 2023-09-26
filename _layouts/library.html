@@ -123,10 +123,12 @@ document.getElementById('searchBox').addEventListener('input', function(e) {
 
     if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm)) {
       item.classList.remove('dn'); // Show item
-      item.classList.add('flex'); // Show item
+      item.classList.add('flex-l'); // Show item
+      item.classList.add('flex-wrap'); // Show item
     } else {
       item.classList.add('dn'); // Hide item
-      item.classList.remove('flex'); // Hide item
+      item.classList.remove('flex-l'); // Hide item
+      item.classList.remove('flex-wrap'); // Hide item
     }
   });
 });
