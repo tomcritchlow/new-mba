@@ -45,13 +45,13 @@
       <div class="w-20 dn db-l">Tags</div>
       <div class="w-10 dn db-l tr"><span class="plus">+</span></div>
     </div>
-    <div class="hidden-row dn bg-newmba-offwhite pv3">
-      <div class="w-40 pv2 ph4">
+    <div class="hidden-row dn bg-newmba-offwhite pv3 flex-l flex-wrap">
+      <div class="w-40-l w-100 pv2 ph4-l">
         <img src="{{item.image}}">
       </div>
 
-      <div class="w-40">
-        Title: {{item.title}}
+      <div class="w-40-l w-100">
+        <span class="code ttu f7">Title:</span> {{item.title}}
         <br>Type: {{item.type}}
         <br>Tags: {% for tag in item.tags %}{{tag}}{% endfor %}
         <br><a href="{{item.link}}" target="_blank" class="dib pa2 ba br2 b--newmba-green f6 ttu">Open Link</a>
