@@ -2,7 +2,7 @@
 layout: post
 title: "Working Identity book by Herminia Ibarra"
 link: "https://herminiaibarra.com/working-identity-book/"
-type: "article"
+type: "book"
 date_saved: 2023-09-19
 tags: [ "networked-careers" ]
 author: "Herminia Ibarra"

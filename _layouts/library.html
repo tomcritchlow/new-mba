@@ -38,12 +38,12 @@
   <div class="w-100 bg-newmba-offwhite">
   <div class="f6 mw8 center ph2">
     {% for item in site.library %}
-    <div class="expandable dim pointer pv3 ph4 bt bb b--newmba-green flex bg-newmba-offwhite mw9 center item" data-item-title="{{item.title}}" data-item-source="{{item.link}}">
-      <div class="w-40-l w-50">{{item.title}}</div>
-      <div class="w-20"><img class="pr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
+    <div class="expandable dim pointer pv3 bt bb b--newmba-green flex-l flex-wrap bg-newmba-offwhite mw9 center item" data-item-title="{{item.title}}" data-item-source="{{item.link}}">
+      <div class="w-40-l w-100">{{item.title}}</div>
+      <div class="w-20-l w-100"><img class="pr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
       <div class="w-10 dn db-l">{{item.type}}</div>
       <div class="w-20 dn db-l">Tags</div>
-      <div class="w-10 tr"><span class="plus">+</span></div>
+      <div class="w-10 dn db-l tr"><span class="plus">+</span></div>
     </div>
     <div class="hidden-row dn bg-newmba-offwhite pv3">
       <div class="w-40 pv2 ph4">
