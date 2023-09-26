@@ -45,7 +45,7 @@
       <div class="w-20 dn db-l">Tags</div>
       <div class="w-10 dn db-l tr"><span class="plus">+</span></div>
     </div>
-    <div class="hidden-row dn bg-newmba-offwhite pv3 flex-l flex-wrap">
+    <div class="hidden-row dn bg-newmba-offwhite pv3 flex-l">
       <div class="w-40-l w-100 pv2 ph4-l">
         <img src="{{item.image}}">
       </div>
@@ -54,7 +54,7 @@
         <span class="code ttu f7">Title:</span> {{item.title}}
         <br>Type: {{item.type}}
         <br>Tags: {% for tag in item.tags %}{{tag}}{% endfor %}
-        <br><a href="{{item.link}}" target="_blank" class="dib pa2 ba br2 b--newmba-green f6 ttu link"><img src="/images/external-link.svg" />Open Link</a>
+        <br><a href="{{item.link}}" target="_blank" class="dib pa2 ba br2 bg-newmba-green white b--newmba-green f6 ttu link"><img src="/images/external-link.svg" class="v-mid pr1 h1"/>Open Link</a>
         {% if item.content | number_of_words > 75 %}
         <div>{{ item.content | truncatewords: 75 }} <a href="{{ item.url }}">read more</a></div>
      {% else %}
