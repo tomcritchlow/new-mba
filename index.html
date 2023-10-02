@@ -77,25 +77,8 @@ Thanks, <a class="newmba-green link" href="https://tomcritchlow.com/">Tom</a>
     
     <div class="flex-wrap flex-l">
 
-      {% for post in site.posts | limit: 3 %}
-      
-      <a class="pv4 flex-wrap link black dim w-third-l w-100 ph2-l" href="{{post.url}}">
+      {% include latest-posts.html %}
 
-        <div class="w-100">
-            <img src="{{post.og}}" />
-        </div>
-
-        <div class="w-100">
-            
-            <div class="f2 pb3">{{post.title}}</div>
-            <div class="f3">{{post.subtitle}}</div>
-            <div class="black-30 f5 tracked TTU pt3">{{ post.date | date: "%B %-d, %Y" }}</div>
-            
-        </div>
-
-    </a>
-      
-      {% endfor %}
     </div>
   
   </div>
