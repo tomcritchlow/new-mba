@@ -28,10 +28,12 @@ Communication, influence, positioning. These matter. There’s no abstract “st
 
 <div class="flex-l">
 <div class="w-third-l pr3-l">
-<img class="ba2 shadow-5" src="/images/tom.jpg" />
+<img class="ba2 br2 shadow-5" src="/images/tom.jpg" />
 </div>
 <div class="w-two-thirds-l pl2-l f3 lh-copy">
-<p>Starting my career in SEO allowed me to get a deep, grounded understanding of "how the web works". Working at places like Google and consulting with companies of all shapes and sizes gave me a good understanding of "how business works". I'm based in Brooklyn and love new opportunities.</p>
+          <p>Starting my career in SEO allowed me to get a deep, grounded understanding of "how the web works". Working at places like Google and consulting with companies of all shapes and sizes gave me a good understanding of "how business works".</p>
+          <p>Throughout my career I've been obsessed with the question of how to be effective. Recognizing that to be effective requires understanding the humans, the systems and the incentives at work.</p>
+          <p>I'm based in Brooklyn and love new opportunities.</p>
 <p>Interested? Book <a class="link newmba-green" href="https://calendly.com/tomcritchlow">time to chat here</a>.</p>
 
 </div>
