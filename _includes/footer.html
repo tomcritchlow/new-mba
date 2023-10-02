@@ -18,13 +18,23 @@
                 </ul>
             </div>
           </div>  
-            <div class="mb4 mb0-ns fl w-100 w-50-l" >
-              <p class="f4 fw6 mb2 f6 mt0">
-                Get the free weekly newsletter
-              </p>
-              <input placeholder="Email Address" class="mw-100 w-100 w5-ns f5 input-reset ba b--black-20 pv3 ph4 border-box">
-              <input type="submit" class="input-reset w-100 w-auto-ns bg-newmba-green black f5 pv3 pv3-ns ph4 ba b--newmba-green bg-hover-mid-gray">
-            </div>
+ 
+          <div class="pb5 w-50-l flex-wrap-l tl pv4 mv4">
+            <div class="pv2 w-100">Get the free weekly newsletter</div>  
+            
+              <form
+              action="https://buttondown.email/api/emails/embed-subscribe/newmba"
+              method="post"
+              target="popupwindow"
+              onsubmit="window.open('https://buttondown.email/newmba', 'popupwindow')"
+              class="embeddable-buttondown-form flex items-center w-100"
+            >
+              <input placeholder="Email Address" type="email" name="email" id="bd-email" class="w-100 f5 input-reset ba b--newmba-green pv3 ph4 border-box br2 br--left">
+              <input type="hidden" name="metadata__cta" value="homepage">
+              <input type="submit" class="input-reset w-auto-ns bg-newmba-green black f5 pv3 ph4 ba b--newmba-green bg-hover-mid-gray br2 br--right pointer">
+              </form>
+      
+          </div>
 
         </div>
 
