@@ -42,9 +42,11 @@
       <div class="w-40-l w-100">{{item.title}}</div>
       <div class="w-20-l w-100"><img class="pr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
       <div class="w-10 dn db-l">{{item.type}}</div>
-      <div class="w-20 dn db-l">Tags</div>
+      <div class="w-20 dn db-l">{% for tag in item.tags %}{{tag}}{% endfor %}</div>
       <div class="w-10 dn db-l tr"><span class="plus">+</span></div>
     </div>
+    
+    <!--Item details div-->
     <div class="hidden-row dn bg-newmba-offwhite pv3">
       <div class="flex-wrap flex-l">
       <div class="w-40-l w-100 pv2 ph4-l">
