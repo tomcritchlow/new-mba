@@ -4,9 +4,11 @@ subtitle: An education platform to change the trajectory of your career
 layout: page
 ---
 
-I was lucky. Early in my career I worked for good bosses, and I worked in an industry that was young and wild.
+The NEW MBA is an online education platform run by Tom Critchlow. The mission is to help mid-career and senior leaders become more confident and capable; to work with more impact, influence and agency.
 
-These two things meant that there weren’t many sacred cows - there wasn’t an established “way of doing things” that I had to follow.
+## Backstory
+
+I was lucky. Early in my career I worked for good bosses, and I worked in SEO - an industry that was young and wild. These two things meant that there weren’t many sacred cows - there wasn’t an established *“way of doing things”* that I had to follow.
 
 So from the beginning of my career I was free to ask the question “What is the most useful way for me to be effective?”
 
