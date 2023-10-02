@@ -14,7 +14,7 @@ So from the beginning of my career I was free to ask the question “What is the
 
 Unfortunately, many of us haven’t been given the freedom to ask that question.
 
-The NEW MBA was founded as a way to explore new ideas in business, to help people get more agency in their careers. To help people ask the question “how can I be effective?”. Sure, there are incredibly leaps and bounds in technology that are radically changing how works gets done - but the truth is that it’s all about people.
+The NEW MBA was founded as a way to explore new ideas in business, to help people get more agency in their careers. To help people ask the question “how can I be effective?”. Sure, there are incredible leaps and bounds in technology that are radically changing how works gets done - but the truth is that it’s all about people.
 
 As you navigate the journey that is a modern “career” you find over and over again that the ways to be effective depend as much on the environment around you (context, people, politics) as it does on the problem (technical skills, resourcing and so on).
 
