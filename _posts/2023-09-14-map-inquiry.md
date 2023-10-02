@@ -16,3 +16,5 @@ I'm excited to use the NEW MBA to explore a range of questions related to work, 
 * If simulations are the best way to teach tacit skills, how do you construct engaging, effective business simulations?
 * How do you design executive level education programs that are both effective, and aren't overly time consuming? This is a key tradeoff for busy orgs and busy execs that want to level up.
 * How does the quarterly planning cycles of companies need to adapt and change and how do we replace it with something new, better, well documented so that it can actually change behavior?
+* How do you visualize strategy, and how do you create "living" strategy maps that teams can reference, align on and share.
+* How do companies remember, share and socialize knowledge?
