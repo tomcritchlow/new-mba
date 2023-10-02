@@ -54,12 +54,12 @@
       </div>
 
       <div class="w-40-l w-100">
-        <span class="code ttu f7">Title:</span> {{item.title}}
-        <br>Type: {{item.type | downcase}}
-        <br>Tags: {% for tag in item.tags %}{{tag | downcase}}{% endfor %}
-        <br><a href="{{item.link}}" target="_blank" class="dib pa2 ba br2 bg-newmba-green white b--newmba-green f6 ttu link"><img src="/images/external-link.svg" class="v-mid pr1 h1"/>Open Link</a>
+        <span class="code ttu f7 newmba-green">Title:</span> {{item.title}}
+        <br><br><span class="code ttu f7 newmba-green">Type:</span> {{item.type | downcase}}
+        <br><br><span class="code ttu f7 newmba-green">Tags:</span> {% for tag in item.tags %}{{tag | downcase}}{% endfor %}
+        <br><a href="{{item.link}}" target="_blank" class="pv2 dib pa2 ba br2 bg-newmba-green white b--newmba-green f6 ttu link"><img src="/images/external-link.svg" class="v-mid pr1 h1"/>Open Link</a>
         {% if item.content | number_of_words > 75 %}
-        <div>{{ item.content | truncatewords: 75 }} <a href="{{ item.url }}">read more</a></div>
+        <div class="i f5 black-50">{{ item.content | truncatewords: 75 }} <a href="{{ item.url }}">read more</a></div>
      {% else %}
         <div>{{ item.content }}</div>
      {% endif %}
