@@ -39,10 +39,10 @@
   <div class="f6 mw8 center ph2">
     {% for item in site.library %}
     <div class="expandable dim pointer pv3 bt bb b--newmba-green flex-l flex-wrap bg-newmba-offwhite mw9 center item" data-item-title="{{item.title}}" data-item-source="{{item.link}}">
-      <div class="w-40-l w-100">{{item.title}}</div>
-      <div class="w-20-l w-100"><img class="pr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
-      <div class="w-10 dn db-l">{{item.type}}</div>
-      <div class="w-20 dn db-l">{% for tag in item.tags %}{{tag}}{% endfor %}</div>
+      <div class="w-40-l w-100 b">{{item.title}}</div>
+      <div class="w-20-l w-100"><img class="pr1 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
+      <div class="w-10 dn db-l">{{item.type | downcase}}</div>
+      <div class="w-20 dn db-l">{% for tag in item.tags %}{{tag | downcase}}{% endfor %}</div>
       <div class="w-10 dn db-l tr"><span class="plus">+</span></div>
     </div>
     
@@ -55,8 +55,8 @@
 
       <div class="w-40-l w-100">
         <span class="code ttu f7">Title:</span> {{item.title}}
-        <br>Type: {{item.type}}
-        <br>Tags: {% for tag in item.tags %}{{tag}}{% endfor %}
+        <br>Type: {{item.type | downcase}}
+        <br>Tags: {% for tag in item.tags %}{{tag | downcase}}{% endfor %}
         <br><a href="{{item.link}}" target="_blank" class="dib pa2 ba br2 bg-newmba-green white b--newmba-green f6 ttu link"><img src="/images/external-link.svg" class="v-mid pr1 h1"/>Open Link</a>
         {% if item.content | number_of_words > 75 %}
         <div>{{ item.content | truncatewords: 75 }} <a href="{{ item.url }}">read more</a></div>
