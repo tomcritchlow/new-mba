@@ -26,11 +26,11 @@ Communication, influence, positioning. These matter. There’s no abstract “st
 
 ## About Tom Critchlow
 
-<div class="flex">
+<div class="flex-l">
 <div class="w-third-l pr2-l ph2">
 <img class="ba2 shadow-5" src="/images/tom.jpg" />
 </div>
-<div class="w-two-thirds pl2-l f3 lh-copy">
+<div class="w-two-thirds-l pl2-l f3 lh-copy">
 <p>Starting my career in SEO allowed me to get a deep, grounded understanding of "how the web works". Working at places like Google and consulting with companies of all shapes and sizes gave me a good understanding of "how business works". I'm based in Brooklyn and love new opportunities.</p>
 <p>Interested? Book <a class="link newmba-green" href="https://calendly.com/tomcritchlow">time to chat here</a>.</p>
 
