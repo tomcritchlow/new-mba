@@ -14,15 +14,13 @@ So from the beginning of my career I was free to ask the question “What is the
 
 Unfortunately, many of us haven’t been given the freedom to ask that question.
 
-The NEW MBA was founded as a way to explore new ideas in business, to help people get more agency in their careers. To help people ask the question “how can I be effective?”
-
-Sure, there are incredibly leaps and bounds in technology that are radically changing how works gets done - but the truth is that it’s all about people.
+The NEW MBA was founded as a way to explore new ideas in business, to help people get more agency in their careers. To help people ask the question “how can I be effective?”. Sure, there are incredibly leaps and bounds in technology that are radically changing how works gets done - but the truth is that it’s all about people.
 
 As you navigate the journey that is a modern “career” you find over and over again that the ways to be effective depend as much on the environment around you (context, people, politics) as it does on the problem (technical skills, resourcing and so on).
 
-If you’re lucky you have a good boss who can help guide you through this messy human-landscape. To play the game. If you’re unlucky, you don’t get that chance - and you burn out or burn up - frustrated and rejected by a system you don’t fully understand and were never invited to participate in.
+If you’re lucky, you have a good boss who can help guide you through this messy human-landscape. To play the game. If you’re unlucky, you don’t get that chance - and you burn out or burn up - frustrated and rejected by a system you don’t fully understand and were never invited to participate in.
 
-My aspiration with the NEW MBA is champion soft power and soft skills - to say another way, to make the glue between the work as important as the work itself.
+My aspiration with the NEW MBA is champion <span class="newmba-green b">the work around the work</span> - to help people understand the game of business and develop ways to become more confident and capable. 
 
 Communication, influence, positioning. These matter. There’s no abstract “strategy” that you can learn that doesn’t relate to the human dynamics beneath.
 

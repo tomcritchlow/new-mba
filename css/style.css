@@ -7,6 +7,10 @@
   --newmba-dark-green:#142423;
 }
 
+::selection {
+  background:var(--newmba-green); 
+}
+
 html, body {
   height: 100%;
   width: 100%;
