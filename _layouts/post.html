@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
       if (navigator.share) {
         navigator.share({
-          title: 'My Website',
-          text: 'Check out my website.',
+          title: '{{page.title}}',
+          text: '{{page.subtitle}}',
           url: window.location.href,
         });
       } else {
