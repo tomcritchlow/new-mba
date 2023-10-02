@@ -27,7 +27,7 @@ Communication, influence, positioning. These matter. There’s no abstract “st
 ## About Tom Critchlow
 
 <div class="flex-l">
-<div class="w-third-l pr2-l ph2">
+<div class="w-third-l pr3-l">
 <img class="ba2 shadow-5" src="/images/tom.jpg" />
 </div>
 <div class="w-two-thirds-l pl2-l f3 lh-copy">
