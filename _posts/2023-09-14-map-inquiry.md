@@ -20,6 +20,6 @@ I'm excited to use the NEW MBA to explore a range of questions related to work, 
 * How do you design executive education that is both effective and engaging. The literature seems to suggest there's a direct tradeoff between learning experiences that are effective and enjoyable...
 * How does the quarterly planning cycles of companies need to adapt and change and how do we replace it with something new, better, well documented so that it can actually change behavior?
 * How do you visualize strategy, and how do you create "living" strategy maps that teams can reference, align on and share? See: [doubleloop](https://doubleloop.app/)
-* How do companies remember, share and socialize knowledge? See [How Teams Remember](https://howteamsremember.com/)
+* How do companies remember, share and socialize knowledge? See [How Teams Remember](https://howteamsremember.com/) and [Strategy is Memory](https://littlefutures.substack.com/p/lf05-strategy-is-memory).
 
 *More questions to be added as they come up...*
