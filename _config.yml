@@ -4,4 +4,6 @@ collections:
   chapters:
     output: true
   library:
-    output: true    
+    output: true
+  drafts:
+    output: true        
