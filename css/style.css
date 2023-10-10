@@ -107,9 +107,10 @@ p a, li a, ul a, ol a, blockquote a{
 
 .content blockquote{
   background-color:var(--newmba-pale-green);
-  padding:15px;
+  padding:7px 15px 7px 15px;
   border-radius:5px;
   margin-left:15px;
+  margin-right:0px;
 }
 
 .content h1, .content h2, .content h3, .content h4{
