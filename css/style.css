@@ -125,3 +125,14 @@ p a, li a, ul a, ol a, blockquote a{
 .rotated {
   transform: rotate(90deg);
 }
+
+.wide{
+  width:150%;
+  margin-left:-25%;
+}
+
+@media (max-width: 1024px) {
+.wide{
+  width:100%;
+}
+}
