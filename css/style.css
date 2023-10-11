@@ -137,12 +137,8 @@ p a, li a, ul a, ol a, blockquote a{
   padding:5px;
 }
 
-.container td, .container th {
+.content td, .content th {
   border: 1px solid black;
-}
-
-.container th { 
-   background: #d9ead3; 
 }
 
 .chevron {
@@ -161,5 +157,6 @@ p a, li a, ul a, ol a, blockquote a{
 @media (max-width: 1024px) {
 .wide{
   width:100%;
+  margin-left:0px;
 }
 }
