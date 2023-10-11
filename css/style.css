@@ -118,6 +118,29 @@ p a, li a, ul a, ol a, blockquote a{
   margin-bottom: 0px;
 } 
 
+.content table{
+  display: block;
+    width: 100%;
+    overflow-x: auto;
+    border: none;
+    padding: 0px;
+}
+
+.content table, .content td, .content th {
+  border-collapse: collapse;
+  vertical-align:top;
+  text-align:left;
+  padding:5px;
+}
+
+.container td, .container th {
+  border: 1px solid black;
+}
+
+.container th { 
+   background: #d9ead3; 
+}
+
 .chevron {
   transition: transform 0.25s;
 }
