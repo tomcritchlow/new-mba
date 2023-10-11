@@ -126,6 +126,10 @@ p a, li a, ul a, ol a, blockquote a{
     padding: 0px;
 }
 
+.content th {
+  background:var(--newmba-pale-green);
+}
+
 .content table, .content td, .content th {
   border-collapse: collapse;
   vertical-align:top;
