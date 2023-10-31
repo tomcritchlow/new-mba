@@ -30,17 +30,7 @@ These three factors are a good set of guardrails for going beyond saying “this
 
 Going deeper, you can break each of these three areas down into a set of laddering ideas:
 
-|  |  |  |
-|---|---|---|
-| Market | I have an idea! | You get excited about a growth opportunity or a problem that can be fixed. |
-|  | It’s a BIG idea! | You start looking at the total TAM of the opportunity - to decide how big this idea could possible be |
-|  | It’s a big, GOOD idea! | You related the idea back to the strategic direction of the business - does it align with the direction we want to go in? |
-| Operations | Here’s how we’ll do it | You start exploring how you might actually do this idea |
-|  | Here’s how we’ll ramp up | You create a more realistic timeline for ramping up and rolling out |
-|  | It’s “profitable”!  | You now can create a more detailed cost analysis - we’ll invest $X to get $Y. Gross margin positive. |
-| Capital | It’s realistic | Combining the ramp up with the business model we can start to see the investment required and payback period. |
-|  | Meets our financial goals | Which enables us to drive towards financial milestones like raising another VC round or going public (or even just meeting yearly goals and targets) |
-|  | Here’s how we structure the deal | Capex vs Opex expenditure, putting the debt on the balance sheet of the business being acquired, trade cash investment for equity stake, create a joint venture |
+![](/images/strategic-finance-table.png)
 
 For me personally, and I think many others, you typically start with the market and work your way upwards from there:
 
