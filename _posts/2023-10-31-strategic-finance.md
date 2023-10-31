@@ -18,7 +18,7 @@ Instead, we need to think through not just whether it’s a “good idea” but 
 
 ## Enter the Business Expertise Triad
 
-The [business model expertise triad](https://commoncog.com/business-expertise/) that Cedric Chin has been writing about at Commoncog (highly recommended subscribe) is a useful framework for thinking through developing an idea into a real pitch:
+The [business model expertise triad](https://commoncog.com/business-expertise/) that Cedric Chin has been writing about at Commoncog (which I highly recommended subscribing to) is a useful framework for thinking through developing an idea into a real pitch:
 
 ![](/images/business-expertise-triad-1.png)
 
