@@ -64,7 +64,7 @@ The ways these ideas show up are varied - from loading up on debt, to structurin
 
 Having been involved in several discussions recently it’s increasingly obvious the difference between treating finance as a go/no-go function that “holds the purse strings” vs treating finance as a strategic function that can enable creative funding strategies to fund, offset or de-risk various investments.
 
-From Financial Flexibility and Opportunity Capture: Bridging the Gap Between Finance and Strategy (bolding mine):
+From [Financial Flexibility and Opportunity Capture: Bridging the Gap Between Finance and Strategy](https://onlinelibrary.wiley.com/doi/10.1111/jacf.12274) (bolding mine):
 
 > **Classic Competitive Strategy theory assumes that advantage comes from operational superiority**—that is, practices, processes, technologies and positioning that result in lower unit costs and/or superior product qualities. Attractive investment opportunities arise from these operating advantages. Cost or product quality advantages are the means to achieve competitive advantage. That implies, though, that the strategic horizon around such prescription is open ended; the opportunities are generic
 >
@@ -135,5 +135,3 @@ While this has historically been seen as somewhat predatory (since the loan repa
 It’s not easy to immediately apply these ideas. You can’t decide to go public tomorrow just to finance an M&A deal you want to make. And you can’t change the accounting structure of your spending without some headaches. These are big, slow moving ideas.
 
 But I find it incredibly useful to understand that these moves exist - part of executive presence is not being left behind in conversations - and many high level discussions touch on finance as a strategic lever. Not just at the revenue/margin/cashflow level but at the debt/financing/accounting level and it’s worthwhile being fluent in these ideas to ensure you have a seat at the table.
-
-In future emails I’ll likely explore these ideas more deeply, and provide more concrete examples and work throughs. In the meantime, let’s all agree to follow along with Cedric’s [The Expertise of Skill of Capital in Business](https://commoncog.com/capital-expertise-in-business-series/) series.
