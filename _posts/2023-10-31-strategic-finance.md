@@ -118,6 +118,8 @@ The core of financial flexibility that we saw above is the ability to have acces
 
 ![](/images/better-collective-roic.png)
 
+*(Aside: if you're not familiar with the idea of ROIC (return on invested capital) with/without goodwill then [read this](https://www.fool.com/how-to-invest/return-on-invested-capital-true-performance.aspx#:~:text=In%20short%2C%20the%20formula%20for%20ROIC%20is%3A).)*
+
 This M&A spree includes the acquisition of Action Network for $240 in 2021 to fuel Better Collective’s aggressive push into the US market as online gambling regulation changed:
 
 > On May 14, 2018, the United States Supreme Court ruled PASPA unconstitutional and paved the way for states to self-regulate retail and online sports betting.
