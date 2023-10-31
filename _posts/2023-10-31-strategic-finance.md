@@ -30,7 +30,7 @@ These three factors are a good set of guardrails for going beyond saying “this
 
 Going deeper, you can break each of these three areas down into a set of laddering ideas:
 
-| Area | Thinking | Notes |
+|  |  |  |
 |---|---|---|
 | Market | I have an idea! | You get excited about a growth opportunity or a problem that can be fixed. |
 |  | It’s a BIG idea! | You start looking at the total TAM of the opportunity - to decide how big this idea could possible be |
