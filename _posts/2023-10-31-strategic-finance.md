@@ -94,7 +94,7 @@ The capex/opex distinction matters primarily because of when you realize the cos
 
 Here’s a nice illustration of this idea from [Lisa Baird](https://www.linkedin.com/feed/update/urn:li:activity:7122210042333802497/):
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7121837001334484994" height="undefined" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+![](/images/lisa-baird-linkedin.png)
 
 Which a nice addendum from [Michael Chapman in the comments](https://www.linkedin.com/feed/update/urn:li:activity:7121837004073361408?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7121837004073361408%2C7121881733288886272%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287121881733288886272%2Curn%3Ali%3Aactivity%3A7121837004073361408%29):
 
