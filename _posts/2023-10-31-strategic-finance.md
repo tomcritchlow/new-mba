@@ -30,7 +30,9 @@ These three factors are a good set of guardrails for going beyond saying “this
 
 Going deeper, you can break each of these three areas down into a set of laddering ideas:
 
+<div class="wide" markdown="1">
 ![](/images/strategic-finance-table.png)
+</div>
 
 For me personally, and I think many others, you typically start with the market and work your way upwards from there:
 
