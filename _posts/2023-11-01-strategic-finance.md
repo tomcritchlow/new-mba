@@ -94,11 +94,11 @@ Which a nice addendum from [Michael Chapman in the comments](https://www.linkedi
 
 There’s a healthy debate right now in the branding and marketing industries of how to [properly account for brand investment](https://ipa.co.uk/news/investment-analyst-survey):
 
-> When asked whether they thought marketing spend should be treated like Technology R&D, where it is capitalised, nearly 90% of analysts said they believe marketing spend should be placed in capital expenditure either all (56%) or part of the time (33%).
+> “When asked whether they thought marketing spend should be treated like Technology R&D, where it is capitalised, nearly 90% of analysts said they believe marketing spend should be placed in capital expenditure either all (56%) or part of the time (33%).
 >
 > Two-thirds of analysts (67%) also want to see changes to how intangible assets as a whole are reported upon and accounted for.
 > 
-> Those that stated they think it should be capitalised at least some of the time believe it would improve their ability to value the company and give them better understanding of future growth potential.
+> Those that stated they think it should be capitalised at least some of the time believe it would improve their ability to value the company and give them better understanding of future growth potential.”
 
 I don’t believe there’s a right or wrong answer here but these conversations are happening in all kinds of management teams right now.
 
