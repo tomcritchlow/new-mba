@@ -39,9 +39,13 @@
   {% for insight in item.insights %}
   
   <div class="w-third pa3">
-    <div class="pa4 bg-newmba-offwhite f4">
-    <div class="i lh-copy">“{{insight |truncatewords: 60}}”</div>
-    <div class="f5 pv3">
+    <div class="pa4 bg-newmba-offwhite f5">
+    <div class="flex justify-between">
+      <div class="">{{item.type}}</div>
+      <div class="">{% for tag in item.tags %}#{{tag}}{% endfor %}</div>
+    </div>
+      <div class="i lh-copy">“{{insight |truncatewords: 60}}”</div>
+    <div class="f6 pv3">
       <div class="b pv1">{{item.title}}</div>
       <div class="w-20-l w-100 flex"><img class="pr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
     </div>
