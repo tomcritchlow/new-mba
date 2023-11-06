@@ -38,8 +38,9 @@
   {% for item in site.library %}
   {% for insight in item.insights %}
   
-  <div class="ba bg-newmba-offwhite">
+  <div class="ba bg-newmba-offwhite w-third pa3">
     {{insight}}
+    <div class="">{{item.title}}</div>
   </div>
   
   {% endfor %}
