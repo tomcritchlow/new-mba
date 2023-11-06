@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "All by Myself? Executives’ Impostor Phenomenon and Loneliness as Catalysts for Executive Coaching With Management Consultants - Shani Kuna, 2019"
+title: "All by Myself? Executives’ Impostor Phenomenon and Loneliness as Catalysts for Executive Coaching With Management Consultants"
 link: "https://journals.sagepub.com/doi/10.1177/0021886319832009"
 type: "paper"
 date_saved: 2023-11-06
