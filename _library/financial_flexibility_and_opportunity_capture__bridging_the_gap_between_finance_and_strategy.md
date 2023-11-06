@@ -8,7 +8,7 @@ tags: [ "strategic-finance" ]
 author: "Stephen V. Arbogast, Dr. Praveen Kumar"
 image: "https://onlinelibrary.wiley.com/cms/asset/7f870b49-aac7-4559-b529-09c7ff4dc633/jacf.2018.30.issue-1.cover.jpg?trick=1699302183129"
 description: "Logically, the practice of corporate finance and corporate strategy should be closely coordinated, but in reality there remains a massive gap between the two. This can lead strategically oriented fir..."
-insights:
+insights: |
  - "Classic Competitive Strategy theory assumes that advantage comes from operational superiority—that is, practices, processes, technologies and positioning that result in lower unit costs and/or superior product qualities. Attractive investment opportunities arise from these operating advantages. Cost or product quality advantages are the means to achieve competitive advantage. That implies, though, that the strategic horizon around such prescription is open ended; the opportunities are generic
 
 Such conventional strategy theory does not sufficiently acknowledge the constraints impacting opportunity capture. In reality, firms’ business opportunities and associated growth are typically restricted to a relatively small set of possibilities. Some are controlled already by competitors and others by players that cannot be easily influenced (such as foreign governments).
