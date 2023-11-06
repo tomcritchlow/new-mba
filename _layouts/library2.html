@@ -66,7 +66,7 @@
 <script>
 
 //Highlighter function
-function searchHighlighter = (elem, keyword) => {
+const searchHighlighter = (elem, keyword) => {
   let el = document.querySelector(elem)
       el.innerHTML = el.innerText
         .replace( new RegExp( keyword + '(?!([^<]+)?<)', 'gi'),
