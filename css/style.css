@@ -2,6 +2,7 @@
   --newmba-green: #00ADA2;
   --newmba-blue: #1B1843;
   --newmba-pink:#FF10F0;
+  --newmba-purple:#A200AD;
   --newmba-pale-green:#C0ECEF;
   --newmba-offwhite:#F5F5EF;
   --newmba-dark-green:#142423;
@@ -28,6 +29,10 @@ html, body {
 
 .newmba-offwhite{
   color:var(--newmba-offwhite);
+}
+
+.newmba-purple{
+  color:var(--newmba-purple);
 }
 
 .b--newmba-green{
