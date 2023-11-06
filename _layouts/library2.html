@@ -36,12 +36,12 @@
 
   <!--Table-->
   {% for item in site.library %}
-  {% for insights in item %}
-  {% for insight in insights %}
+  {% for insight in item.insights %}
+  
   <div class="ba bg-newmba-offwhite">
     {{insight}}
   </div>
-  {% endfor %}
+  
   {% endfor %}
   {% endfor %}
 
