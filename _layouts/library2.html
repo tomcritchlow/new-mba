@@ -1,0 +1,53 @@
+{% include head.html %}
+
+{% include nav.html color="dark" %}
+
+<div class="bg-newmba-dark-green pv4">
+
+<div class="newmba-offwhite w-100 pv4">
+    <div class="mw8 center ph2">
+      <div class="w-90">
+        <img src="/images/library-logo-white.svg"/>
+        <h2 class="mt0 fw4 f2 cormorant">A curated set of resources from the NEW MBA</h2>
+        <div class="flex items-center">
+          <input type="text" id="searchBox" placeholder="Search items..." class="pa2 i w-50-l" />
+          <div id="closebox" class="pointer underline f7 dn pl2">clear</div>
+        </div>
+        
+      </div>
+      
+    </div>
+</div>
+
+<!--New div approach-->
+
+<div class="w-100">
+
+  <!--Header row-->
+  <div class="mw8 center ph2">
+  <div class="newmba-green flex ph4 pv3 f5 b mw9 center">
+    <div class="w-40">Title</div>
+    <div class="w-20">Source</div>
+    <div class="w-10 dn db-l">Type</div>
+    <div class="w-20 dn db-l">Tags</div>
+    <div class="w-10"></div>
+  </div>
+</div>
+
+  <!--Table-->
+  {% for item in site.library %}
+  {% for insights in item %}
+  {% for insight in insights %}
+  <div class="ba bg-newmba-offwhite">
+    {{insight}}
+  </div>
+  {% endfor %}
+  {% endfor %}
+
+
+{% include footer.html %}
+
+
+
+
+
