@@ -30,7 +30,7 @@
     <div class="flex items-center">
       Search: 
       <div class="flex">
-        <input type="text" id="searchBox" placeholder="Search items..." class="pa2 i w-50-l" />
+        <input type="text" id="searchBox" placeholder="Search items..." class="pa2 i" />
         <div id="closebox" class="pointer underline f7 dn pl2">clear</div>
       </div>
     </div>
@@ -64,6 +64,17 @@
 
 <!--Search box-->
 <script>
+
+//Highlighter function
+function searchHighlighter = (elem, keyword) => {
+  let el = document.querySelector(elem)
+      el.innerHTML = el.innerText
+        .replace( new RegExp( keyword + '(?!([^<]+)?<)', 'gi'),
+        '<mark>$&</mark>'
+    );
+  return el
+}
+
   // Event listener for the search box
 document.getElementById('searchBox').addEventListener('input', function(e) {
   const searchTerm = e.target.value.toLowerCase(); // Convert search term to lower case
@@ -93,6 +104,7 @@ document.getElementById('searchBox').addEventListener('input', function(e) {
     if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm) || itemInsight.includes(searchTerm)) {
       item.classList.remove('dn'); // Show item
       item.classList.add('db'); // Show item
+      searchHighlighter(item, searchTerm);
     } else {
       item.classList.add('dn'); // Hide item
       item.classList.remove('db'); // Hide item
