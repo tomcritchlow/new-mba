@@ -39,7 +39,7 @@
   {% for insight in item.insights %}
   
   <div class="ba bg-newmba-offwhite w-third pa4 f4 ">
-    {{insight}}
+    <div class="i">“{{insight}}”</div>
     <div class="f5 pv3">
       <div class="b pv1">{{item.title}}</div>
       <div class="w-20-l w-100 flex"><img class="pr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
