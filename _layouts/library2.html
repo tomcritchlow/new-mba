@@ -33,17 +33,19 @@
 </div>
 
   <!--Table-->
-  <div class="w-100 center flex">
+  <div class="w-100 center flex flex-wrap">
 
   {% for item in site.library %}
   {% for insight in item.insights %}
   
-  <div class="ba bg-newmba-offwhite w-third pa4 f4 ma3">
+  <div class="w-third pa3">
+    <div class="pa4 bg-newmba-offwhite">
     <div class="i lh-copy">“{{insight |truncatewords: 60}}”</div>
     <div class="f5 pv3">
       <div class="b pv1">{{item.title}}</div>
       <div class="w-20-l w-100 flex"><img class="pr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
     </div>
+  </div>
   </div>
   
   {% endfor %}
