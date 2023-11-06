@@ -46,12 +46,12 @@
   
   <div class="w-third-l w-100 pa3 item" data-item-title="{{item.title}}" data-item-source="{{item.link}}">
     <div class="pa4 bg-newmba-offwhite f5">
-    <div class="flex justify-between pb3">
+    <div class="flex justify-between pb3 f6">
       <div class="newmba-green ttu">{{item.type}}</div>
       <div class="b newmba-purple">{% for tag in item.tags %}#{{tag}}{% endfor %}</div>
     </div>
       <div class="i lh-copy b">“{{insight |truncatewords: 60}}”</div>
-    <div class="f7 pt3">
+    <div class="f6 pt3">
       <div class="pb2">{{item.title}}</div>
       <div class="w-20-l w-100 flex"><img class="mr2 v-mid br-100 ba b--newmba-green" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
     </div>
@@ -91,12 +91,11 @@ document.getElementById('searchBox').addEventListener('input', function(e) {
 
     if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm)) {
       item.classList.remove('dn'); // Show item
-      item.classList.add('flex-l'); // Show item
-      item.classList.add('flex-wrap'); // Show item
+      item.classList.add('db'); // Show item
     } else {
       item.classList.add('dn'); // Hide item
-      item.classList.remove('flex-l'); // Hide item
-      item.classList.remove('flex-wrap'); // Hide item
+      item.classList.remove('db'); // Hide item
+      
     }
   });
 });
@@ -115,7 +114,7 @@ document.getElementById('closebox').addEventListener('click', function(e) {
   const items = document.querySelectorAll('.item');
   items.forEach(function(item) {
     item.classList.remove('dn');
-    item.classList.add('flex');
+    item.classList.add('db');
   });
 });
 </script>
