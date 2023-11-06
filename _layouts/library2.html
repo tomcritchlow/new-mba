@@ -44,7 +44,7 @@
   {% for item in site.library %}
   {% for insight in item.insights %}
   
-  <div class="w-third-l w-100 pa3">
+  <div class="w-third-l w-100 pa3 item" data-item-title="{{item.title}}" data-item-source="{{item.link}}">
     <div class="pa4 bg-newmba-offwhite f5">
     <div class="flex justify-between pb3">
       <div class="newmba-green ttu">{{item.type}}</div>
@@ -62,6 +62,63 @@
   {% endfor %}
 </div>
 
+<!--Search box-->
+<script>
+  // Event listener for the search box
+document.getElementById('searchBox').addEventListener('input', function(e) {
+  const searchTerm = e.target.value.toLowerCase(); // Convert search term to lower case
+  const closebox = document.getElementById("closebox");
+
+  //scroll so input box at top of page (TODO make sticky?)
+  const inputRect = document.getElementById("searchBox").getBoundingClientRect();
+  window.scrollTo({
+      top: inputRect.top + window.pageYOffset,
+      behavior: 'smooth'
+    });
+
+  // show/hide the "clear search" link
+  if(searchTerm.length > 0){
+    closebox.classList.remove("dn");
+  } else{
+    closebox.classList.add("dn");
+  }
+  const items = document.querySelectorAll('.item'); // Get all items
+
+  // Loop through all items and hide those that don't match the search term
+  items.forEach(function(item) {
+    const itemTitle = item.getAttribute('data-item-title').toLowerCase(); // Convert title to lower case
+    const itemSource = item.getAttribute('data-item-source').toLowerCase(); // Convert source to lower case
+
+    if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm)) {
+      item.classList.remove('dn'); // Show item
+      item.classList.add('flex-l'); // Show item
+      item.classList.add('flex-wrap'); // Show item
+    } else {
+      item.classList.add('dn'); // Hide item
+      item.classList.remove('flex-l'); // Hide item
+      item.classList.remove('flex-wrap'); // Hide item
+    }
+  });
+});
+
+// Event listener for the clear search link
+document.getElementById('closebox').addEventListener('click', function(e) {
+  e.preventDefault(); // Prevent default link action
+
+  // Clear the search box
+  const searchBox = document.getElementById('searchBox');
+  searchBox.value = '';
+  e.target.classList.add("dn");
+
+
+  // Show all items
+  const items = document.querySelectorAll('.item');
+  items.forEach(function(item) {
+    item.classList.remove('dn');
+    item.classList.add('flex');
+  });
+});
+</script>
 
 {% include footer.html %}
 
