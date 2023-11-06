@@ -94,7 +94,10 @@ document.getElementById('searchBox').addEventListener('input', function(e) {
     closebox.classList.add("dn");
   }
   const items = document.querySelectorAll('.item'); // Get all items
+  
+  // remove all highlighting
   $('mark').contents().unwrap();
+  
   // Loop through all items and hide those that don't match the search term
   items.forEach(function(item) {
     const itemTitle = item.getAttribute('data-item-title').toLowerCase(); // Convert title to lower case
@@ -126,6 +129,8 @@ document.getElementById('closebox').addEventListener('click', function(e) {
 
   // Show all items
   const items = document.querySelectorAll('.item');
+  // remove all highlighting
+  $('mark').contents().unwrap();
   items.forEach(function(item) {
     item.classList.remove('dn');
     item.classList.add('db');
