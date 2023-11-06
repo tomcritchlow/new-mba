@@ -17,7 +17,7 @@
 
 <!--New div approach-->
 
-<div class="w-100">
+<div class="w-100" id="results">
 
   <!--Header row-->
   <div class="mw8 center ph2 bg-newmba-dark-green" style="position:sticky;top:10px;">
@@ -70,7 +70,7 @@ document.getElementById('searchBox').addEventListener('input', function(e) {
   const closebox = document.getElementById("closebox");
 
   //scroll so input box at top of page (TODO make sticky?)
-  const inputRect = document.getElementById("searchBox").getBoundingClientRect();
+  const inputRect = document.getElementById("results").getBoundingClientRect();
   window.scrollTo({
       top: inputRect.top + window.pageYOffset,
       behavior: 'smooth'
