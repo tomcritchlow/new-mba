@@ -46,14 +46,14 @@
   {% for insight in item.insights %}
   
   <div class="w-third-l w-100 pa3 item" data-item-title="{{item.title}}" data-item-source="{{item.link}}" data-item-insight="{{insight}}">
-    <a href="{{item.url}}"><div class="pa4 bg-newmba-offwhite f5 br2">
+    <a href="{{item.url}}" class="link"><div class="pa4 bg-newmba-offwhite f5 br2">
     <div class="flex justify-between pb3 f6">
       <div class="newmba-green ttu">{{item.type}}</div>
-      <div class="b newmba-purple">{% for tag in item.tags %}#{{tag}}{% endfor %}</div>
+      <div class="b newmba-purple">{% for tag in item.tags %}<a href="/tag">#{{tag}}</a>{% endfor %}</div>
     </div>
-      <div class="i lh-copy b itemtext">“{{insight |truncatewords: 60}}”</div>
+      <div class="i lh-copy b itemtext black">“{{insight |truncatewords: 60}}”</div>
     <div class="f6 pt3">
-      <div class="pb2 itemtitle">{{item.title}}</div>
+      <div class="pb2 itemtitle black">{{item.title}}</div>
       <div class="w-20-l w-100 flex"><img class="mr2 v-mid br-100 ba b--newmba-green" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i">{{ item.link | split: "//" | last | split: "/" | first }}</span></div>
     </div>
   </div>
@@ -62,6 +62,7 @@
   
   {% endfor %}
   {% endfor %}
+</div>
 </div>
 
 <!--Search box-->
