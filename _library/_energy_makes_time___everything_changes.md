@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: " Energy makes time | everything changes"
 link: "https://everythingchanges.us/blog/energy-makes-time/"
 type: "article"

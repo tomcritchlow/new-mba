@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Integrating Chaos: Building Resilient Organizations with Chaos Theory"
 link: "https://think-boundless.com/chaos-theory/"
 type: "article"
