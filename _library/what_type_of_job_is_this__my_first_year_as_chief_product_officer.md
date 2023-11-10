@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "What Type of Job is This: My First Year as Chief Product Officer"
 link: "https://caseyaccidental.com/chief-product-officer-first-year"
 type: Article

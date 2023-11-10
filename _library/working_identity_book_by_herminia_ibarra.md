@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Working Identity book by Herminia Ibarra"
 link: "https://herminiaibarra.com/working-identity-book/"
 type: "book"

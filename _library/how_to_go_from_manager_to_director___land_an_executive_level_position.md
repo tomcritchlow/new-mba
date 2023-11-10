@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "How to Go from Manager to Director - Land an Executive Level Position"
 link: "https://www.youtube.com/watch?v=lIGc9cV-H0g"
 type: "video"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "LF05 - Strategy is Memory"
 link: "https://littlefutures.substack.com/p/lf05-strategy-is-memory"
 type: "article"

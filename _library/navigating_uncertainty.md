@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Navigating Uncertainty"
 link: "https://medium.com/@mackfogelson/navigating-uncertainty-f20211bfbdc6"
 type: "article"

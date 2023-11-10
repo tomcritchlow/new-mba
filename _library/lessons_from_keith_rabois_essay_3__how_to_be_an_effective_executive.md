@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Lessons from Keith Rabois Essay 3: How to be an Effective Executive"
 link: "https://delian.io/lessons-3"
 type: "article"

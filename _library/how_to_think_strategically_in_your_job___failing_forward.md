@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "How to think strategically in your job - Failing Forward"
 link: "https://lesley.pizza/think-strategically-at-work/"
 type: "article"

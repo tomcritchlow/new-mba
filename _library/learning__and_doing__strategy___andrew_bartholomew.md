@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Learning, and Doing, Strategy — Andrew Bartholomew"
 link: "https://www.abartholomew.com/writing/learning-and-doing-strategy"
 type: "article"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Why business intelligence falls flat"
 link: "https://blog.doubleloop.app/why-dashboards-fall-flat/"
 type: "article"

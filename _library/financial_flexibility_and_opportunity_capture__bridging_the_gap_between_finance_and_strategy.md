@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Financial Flexibility and Opportunity Capture: Bridging the Gap Between Finance and Strategy"
 link: "https://onlinelibrary.wiley.com/doi/10.1111/jacf.12274"
 type: "paper"

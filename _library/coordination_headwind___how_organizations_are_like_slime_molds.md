@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Coordination Headwind - How Organizations Are Like Slime Molds"
 link: "https://komoroske.com/slime-mold/"
 type: "article"

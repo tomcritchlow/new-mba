@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "The power of PowerPoint: A visual perspective on meaning making in strategy"
 link: "https://warwick.ac.uk/fac/soc/wbs/subjects/sib/people/sotirios_profile/knight_paroutis_heracleous_18_SMJ.pdf"
 type: "paper"

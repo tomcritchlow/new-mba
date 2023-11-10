@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "It’s Time to Face the Three Challenges of Learning"
 link: "https://sloanreview.mit.edu/article/its-time-to-face-the-three-challenges-of-learning/"
 type: "article"

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Strategy as an Unfolding Network of Associations"
 link: "https://anthrosource.onlinelibrary.wiley.com/doi/pdf/10.1111/1559-8918.2016.01102"
 type: "paper"

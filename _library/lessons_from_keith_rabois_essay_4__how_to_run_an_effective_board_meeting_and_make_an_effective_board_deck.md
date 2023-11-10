@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Lessons from Keith Rabois Essay 4: How to run an Effective Board Meeting and make an Effective Board Deck"
 link: "https://delian.io/lessons-4"
 type: "article"

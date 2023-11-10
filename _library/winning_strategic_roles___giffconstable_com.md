@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Winning Strategic Roles | giffconstable.com"
 link: "https://giffconstable.com/2021/03/winning-strategic-roles/"
 type: "article"

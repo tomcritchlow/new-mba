@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Context over control: the future of remote work"
 link: "https://pulseasync.com/operators/future-remote-working/"
 type: "article"

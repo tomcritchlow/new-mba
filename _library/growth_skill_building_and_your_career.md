@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Growth Skill Building and Your Career"
 link: "https://www.fishmanafnewsletter.com/p/growth-skill-building-and-your-career-phases"
 type: "article"

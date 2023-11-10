@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Clients Have a Surprising Amount of Detail"
 link: "https://tomcritchlow.com/2023/06/05/clients-detail/"
 type: Article

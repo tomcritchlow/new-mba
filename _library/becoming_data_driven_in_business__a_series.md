@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Becoming Data Driven in Business: A Series"
 link: "https://commoncog.com/becoming-data-driven-in-business/"
 type: "article"

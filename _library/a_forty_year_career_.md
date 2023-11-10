@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "A forty-year career."
 link: "https://lethain.com/forty-year-career/"
 type: Article

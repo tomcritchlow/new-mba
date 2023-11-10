@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "The Future of Leadership Development"
 link: "https://hbr.org/2019/03/the-future-of-leadership-development"
 type: "article"

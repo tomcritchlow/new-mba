@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "The Emperor’s New Strategy"
 link: "https://medium.com/make-work-better/the-emperors-new-strategy-37b17afe420e"
 type: "article"

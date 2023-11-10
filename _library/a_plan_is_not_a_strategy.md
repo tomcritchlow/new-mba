@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "A Plan Is Not a Strategy"
 link: "https://www.youtube.com/watch?v=iuYlGRnC7J8"
 type: "video"

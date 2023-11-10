@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Organizing Your Documentation | Variance"
 link: "https://www.variance.com/posts/organizing-your-documentation"
 type: "article"

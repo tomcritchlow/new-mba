@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "How teams remember"
 link: "https://howteamsremember.com/"
 type: "article"

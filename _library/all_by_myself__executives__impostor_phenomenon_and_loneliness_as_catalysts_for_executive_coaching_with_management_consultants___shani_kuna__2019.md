@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "All by Myself? Executives’ Impostor Phenomenon and Loneliness as Catalysts for Executive Coaching With Management Consultants"
 link: "https://journals.sagepub.com/doi/10.1177/0021886319832009"
 type: "paper"

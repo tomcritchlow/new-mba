@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "Execution > Strategy | Variance"
 link: "https://www.variance.com/posts/execution-strategy"
 type: "article"

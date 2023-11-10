@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: libraryitem
 title: "(PDF) Moving off the Map: How Knowledge of Organizational Operations Empowers and Alienates"
 link: "https://www.researchgate.net/publication/334063511_Moving_off_the_Map_How_Knowledge_of_Organizational_Operations_Empowers_and_Alienates"
 type: "article"
