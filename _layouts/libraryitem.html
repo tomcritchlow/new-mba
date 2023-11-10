@@ -3,10 +3,16 @@
 {% include nav.html color="dark" %}
 
 <div class="mw7 center ph4-l ph2">
-    <div class="f7 ttu">title</div>
+    <div class="f7 ttu newmba-green pv3">title</div>
     <h2>{{page.title}}</h2>
-    <div class="f7 ttu bt b--black-50">description</div>
+    <div class="f7 ttu bt b--black-20">description</div>
     <div>{{page.description}}</div>
-    <div class="f7 ttu bt b--black-50">link</div>
+    <div class="f7 ttu bt b--black-20 newmba-green pv3">link</div>
     <div class="flex"><img class="mr2 v-mid br-100 ba b--newmba-green" src="https://www.google.com/s2/favicons?domain={{page.link}}"> <span class="black-70 i">{{ page.link | split: "//" | last | split: "/" | first }}</span></div>
+    <div class="f7 ttu bt b--black-20">quotes</div>
+    <div>
+        {% for insight in page.insights %}
+        <p class="i">{{insight}}</p>
+        {% endfor %}
+    </div>
 </div>
