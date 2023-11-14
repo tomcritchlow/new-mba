@@ -91,7 +91,9 @@
       if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm) || itemInsight.includes(searchTerm)) {
         item.classList.remove('dn'); // Show item
         item.classList.add('db'); // Show item
-        searchHighlighter(item.querySelector(".itemtext"), searchTerm);
+        if(itemInsight){ // check if insights are shown
+          searchHighlighter(item.querySelector(".itemtext"), searchTerm);
+        }
         searchHighlighter(item.querySelector(".itemtitle"), searchTerm);
       } else {
         item.classList.add('dn'); // Hide item
