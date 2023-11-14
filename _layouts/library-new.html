@@ -82,7 +82,9 @@
     items.forEach(function(item) {
       const itemTitle = item.getAttribute('data-item-title').toLowerCase(); // Convert title to lower case
       const itemSource = item.getAttribute('data-item-source').toLowerCase(); // Convert source to lower case
-      const itemInsight = item.getAttribute('data-item-insight').toLowerCase(); // Convert source to lower case
+      if(item.hasAttribute('data-item-insight')){
+        const itemInsight = item.getAttribute('data-item-insight').toLowerCase(); // Convert source to lower case
+      };
   
       if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm) || itemInsight.includes(searchTerm)) {
         item.classList.remove('dn'); // Show item
