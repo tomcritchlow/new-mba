@@ -21,16 +21,15 @@
         <div class="w-80"><div>{{page.description}}</div></div>
         <div class="w-10"></div>
     </div>    
+
+    <div class="flex w-100">
+        <div class="w-10"><div class="f7 ttu bt b--black-20 newmba-green pv3">quotes</div></div>
+        <div class="w-80"><div>
+            {% for insight in page.insights %}
+            <p class="i">{{insight}}</p>
+            {% endfor %}
+        </div></div>
+        <div class="w-10"></div>
+    </div>        
     
-    
-    
-    
-    <div class="f7 ttu bt b--black-20 newmba-green pv3">link</div>
-    
-    <div class="f7 ttu bt b--black-20">quotes</div>
-    <div>
-        {% for insight in page.insights %}
-        <p class="i">{{insight}}</p>
-        {% endfor %}
-    </div>
 </div>
