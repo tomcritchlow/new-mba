@@ -80,12 +80,12 @@
     
     // Loop through all items and hide those that don't match the search term
     items.forEach(function(item) {
-      const itemTitle = item.getAttribute('data-item-title').toLowerCase(); // Convert title to lower case
-      const itemSource = item.getAttribute('data-item-source').toLowerCase(); // Convert source to lower case
+      var itemTitle = item.getAttribute('data-item-title').toLowerCase(); // Convert title to lower case
+      var itemSource = item.getAttribute('data-item-source').toLowerCase(); // Convert source to lower case
       if(item.hasAttribute('data-item-insight')){ // check if item has insights
-        const itemInsight = item.getAttribute('data-item-insight').toLowerCase(); // Convert source to lower case
+        var itemInsight = item.getAttribute('data-item-insight').toLowerCase(); // Convert source to lower case
       } else{
-        const itemInsight = "";
+        var itemInsight = "";
       };
   
       if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm) || itemInsight.includes(searchTerm)) {
