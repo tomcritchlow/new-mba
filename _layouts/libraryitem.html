@@ -2,34 +2,34 @@
 
 {% include nav.html color="dark" %}
 
-<div class="mw7 center ph2">
+<div class="mw7 center ph4-l ph2">
 
     <div class="flex w-100">
-        <div class="w-10"></div>
-        <div class="w-80 bb b--black-50"><h2>{{page.title}}</h2></div>
-        <div class="w-10"></div>
+        
+        <div class="w-100 bb b--black-50"><h2>{{page.title}}</h2></div>
+        
     </div>
 
     <div class="flex w-100 mv3">
-        <div class="w-10">LINK</div>
+        <div class="w-20">LINK</div>
         <div class="w-80 bb b--black-50"><div class="flex"><img class="mr2 v-mid br-100 ba b--newmba-green" src="https://www.google.com/s2/favicons?domain={{page.link}}"> <span class="black-70 i">{{ page.link | split: "//" | last | split: "/" | first }}</span> <a class="link newmba-green" href="{{page.link}}">view source ↗</a></div></div>
-        <div class="w-10"></div>
+        
     </div>    
 
     <div class="flex w-100">
-        <div class="w-10"><div class="f7 ttu newmba-green pv3">description</div></div>
+        <div class="w-20"><div class="f7 ttu newmba-green pv3">description</div></div>
         <div class="w-80 bb b--black-50"><div>{{page.description}}</div></div>
-        <div class="w-10"></div>
+        
     </div>    
 
     <div class="flex w-100">
-        <div class="w-10"><div class="f7 ttu newmba-green pv3">quotes</div></div>
+        <div class="w-20"><div class="f7 ttu newmba-green pv3">quotes</div></div>
         <div class="w-80 bb b--black-50"><div>
             {% for insight in page.insights %}
             <p class="i">{{insight}}</p>
             {% endfor %}
         </div></div>
-        <div class="w-10"></div>
+        
     </div>        
     
 </div>
