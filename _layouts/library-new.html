@@ -85,7 +85,7 @@
       if(item.hasAttribute('data-item-insight')){ // check if item has insights
         const itemInsight = item.getAttribute('data-item-insight').toLowerCase(); // Convert source to lower case
       }else{
-        const itemInsight;
+        const itemInsight = "";
       };
   
       if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm) || itemInsight.includes(searchTerm)) {
