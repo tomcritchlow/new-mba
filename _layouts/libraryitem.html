@@ -8,27 +8,27 @@
     <div class="w-50 pr4-l">
         <h1>{{page.title}}</h1>
         
-        <div class="flex pv3 bb b--black-20">
+        <div class="flex pv3 bb b--black-20 items-center">
             <div class="w-20 newmba-green f7 ttu">Source:</div>
             <div class="w-80"><div class="flex"><img class="mr2 v-mid br-100 ba b--newmba-green" src="https://www.google.com/s2/favicons?domain={{page.link}}"> <a class="link newmba-green" href="{{page.link}}"></a><span class="black-70 i">{{ page.link | split: "//" | last | split: "/" | first }}</span> ↗</a></div></div>
         </div>
 
         {% if page.author %}
-        <div class="flex pv3 bb b--black-20">
+        <div class="flex pv3 bb b--black-20 items-center">
             <div class="w-20 newmba-green ttu f7">Author:</div>
             <div class="w-80">{{page.author}}</div>
         </div>
         {% endif %}
 
         {% if page.tags %}
-        <div class="flex pv3 bb b--black-20">
+        <div class="flex pv3 bb b--black-20 items-center">
             <div class="w-20 newmba-green ttu f7">Tags:</div>
-            <div class="w-80">{% for tag in item.tags %}<a href="/tag" class="link newmba-purple b">#{{tag}}</a>{% endfor %}</div>
+            <div class="w-80">{% for tag in page.tags %}<a href="/tag" class="link newmba-purple b">#{{tag}}</a>{% endfor %}</div>
         </div>
         {% endif %}
         
         {% if page.tags %}
-        <div class="flex pv3 bb b--black-20">
+        <div class="flex pv3">
             <img src="{{page.image}}" />
         </div>
         {% endif %}        
