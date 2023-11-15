@@ -10,7 +10,7 @@ layout: library-new
 <div class="w-100 center flex flex-wrap">
 {% for tag in tags %}
 <div class="w-third-l w-100 pa3 item">
-    <div class="bg-newmba-offwhite">
+    <div class="pa4 bg-newmba-offwhite f5 br2">
         <div class="newmba-purple">#{{tag}}</div>
     </div>
 </div>
