@@ -51,8 +51,65 @@
 
 {{content}}
 
+<script>
+// Highlighter function
+const searchHighlighter = (elem, keyword) => {
+  let el = elem;
+  el.innerHTML = el.innerText
+    .replace(new RegExp(keyword + '(?!([^<]+)?<)', 'gi'), '<mark>$&</mark>');
+  return el
+}
 
-<!--Search box-->
+// Perform search
+const performSearch = (searchTerm) => {
+  const closebox = document.getElementById("closebox");
+
+  if (searchTerm.length > 0) {
+    closebox.classList.remove("dn");
+  } else {
+    closebox.classList.add("dn");
+  }
+
+  const items = document.querySelectorAll('.item');
+  $('mark').contents().unwrap();
+
+  items.forEach(function(item) {
+    var itemTitle = item.getAttribute('data-item-title').toLowerCase();
+    var itemSource = item.getAttribute('data-item-source').toLowerCase();
+    var itemInsight = item.hasAttribute('data-item-insight') ? item.getAttribute('data-item-insight').toLowerCase() : "";
+
+    if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm) || itemInsight.includes(searchTerm)) {
+      item.classList.remove('dn');
+      item.classList.add('db');
+      if (itemInsight != "") {
+        searchHighlighter(item.querySelector(".itemtext"), searchTerm);
+      }
+      searchHighlighter(item.querySelector(".itemtitle"), searchTerm);
+    } else {
+      item.classList.add('dn');
+      item.classList.remove('db');
+    }
+  });
+}
+
+// Event listener for the search box
+document.getElementById('searchBox').addEventListener('input', function(e) {
+  const searchTerm = e.target.value.toLowerCase();
+  performSearch(searchTerm);
+});
+
+// Event listener for the clear search link
+document.getElementById('closebox').addEventListener('click', function(e) {
+  e.preventDefault();
+  const searchBox = document.getElementById('searchBox');
+  searchBox.value = '';
+  e.target.classList.add("dn");
+  performSearch('');
+});
+</script>
+
+<!--Search box Old-->
+<!--
 <script>
 
   //Highlighter function
@@ -133,5 +190,6 @@
     });
   });
   </script>
+-->
 
 {% include footer.html %}
