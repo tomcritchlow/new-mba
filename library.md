@@ -11,7 +11,7 @@ layout: library-new
 {% for item in sorted_items %}
 {% for insight in item.insights %}
 
-<div class="w-third-l w-100 pa3 item" data-item-title="{{item.title}}" data-item-source="{{item.link}}" data-item-insight="{{insight}}">
+<div class="w-third-l w-100 pa3 item" data-item-title="{{item.title}}" data-item-source="{{item.link}}" data-item-insight="{{insight}}" data-item-tags="{{item.tags | join:','}}">
   <div class="pa4 bg-newmba-offwhite f5 br2">
   <div class="flex justify-between pb3 f6">
     <div class="newmba-green ttu">{{item.type}}</div>
