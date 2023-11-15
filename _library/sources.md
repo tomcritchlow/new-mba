@@ -5,7 +5,7 @@ layout: library-new
 <!--Table-->
 <div class="w-100 center flex flex-wrap">
 <div class="mw8 w-100 center">
-{% assign sorted_items = site.library | sort:"date_saved" %}
+{% assign sorted_items = site.library | sort:"date_saved"  | reverse %}
 {% for item in sorted_items %}
 {% if item.layout == "libraryitem" %}
 <div class="pa3 mv3 w-100 br1 bg-newmba-offwhite item" data-item-title="{{item.title}}" data-item-source="{{item.link}}">
