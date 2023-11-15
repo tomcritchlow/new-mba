@@ -15,7 +15,7 @@ layout: library-new
   <div class="pa4 bg-newmba-offwhite f5 br2">
   <div class="flex justify-between pb3 f6">
     <div class="newmba-green ttu">{{item.type}}</div>
-    <div class="">{% for tag in item.tags %}<a href="/tag" class="link newmba-purple b">#{{tag}}</a>{% endfor %}</div>
+    <div class="">{% for tag in item.tags %}<a href="/library/?tag={{tag}}" class="link newmba-purple b">#{{tag}}</a>{% endfor %}</div>
   </div>
   <a href="{{item.url}}" class="link"><div class="i lh-copy b itemtext black">“{{insight |truncatewords: 60}}”</div></a>
   <div class="f6 pt3">

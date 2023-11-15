@@ -13,7 +13,7 @@ layout: library-new
 <a class="link black w-40-l w-100 b itemtitle" href="{{item.url}}">{{item.title}}</a>
 <div class="w-30-l w-100 f7"><div class="flex"><img class="mr2 v-mid" src="https://www.google.com/s2/favicons?domain={{item.link}}"> <span class="black-70 i"><a class="link black" href="{{item.url}}">{{ item.link | split: "//" | last | split: "/" | first }}</a></span></div></div>
 <div class="w-10"></div>
-<div class="w-20-l w-100 tr f7">{% for tag in item.tags %}<a href="/tag" class="link newmba-purple b">#{{tag}}</a>{% endfor %}</div>
+<div class="w-20-l w-100 tr f7">{% for tag in item.tags %}<a href="/library/?tag={{tag}}" class="link newmba-purple b">#{{tag}}</a>{% endfor %}</div>
 </div>
 </div>
 {% endif %}
