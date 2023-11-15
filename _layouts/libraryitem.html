@@ -23,7 +23,7 @@
         {% if page.tags %}
         <div class="flex pv3 bb b--black-20 items-center">
             <div class="w-20 newmba-green ttu f7">Tags:</div>
-            <div class="w-80">{% for tag in page.tags %}<a href="/tag" class="link newmba-purple b">#{{tag}}</a>{% endfor %}</div>
+            <div class="w-80">{% for tag in page.tags %}<a href="/library/?search={{tag}}" class="link newmba-purple b">#{{tag}}</a>{% endfor %}</div>
         </div>
         {% endif %}
         
