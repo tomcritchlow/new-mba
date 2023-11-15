@@ -106,6 +106,21 @@ document.getElementById('closebox').addEventListener('click', function(e) {
   e.target.classList.add("dn");
   performSearch('');
 });
+
+// Function to perform search if there's a search query string
+function searchFromQueryString() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchTerm = urlParams.get('search');
+
+  if (searchTerm) {
+    document.getElementById('searchBox').value = searchTerm; // Set the value of the search box
+    performSearch(searchTerm.toLowerCase());
+  }
+}
+
+// Execute search from query string on page load
+document.addEventListener('DOMContentLoaded', searchFromQueryString);
+
 </script>
 
 <!--Search box Old-->
