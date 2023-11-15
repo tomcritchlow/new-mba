@@ -26,6 +26,8 @@
     {% assign num_quotes = num_quotes | plus :1 %}
   {% endfor %}
 {% endfor %}
+{% assign tags = site.library | where: 'layout', 'libraryitem' | map: 'tags' | join: ',' | split: ',' | uniq %}
+{% assign num_tags = tags.size %}
 
   <!--Header row-->
   <div class="w-100 center ph2 bg-newmba-dark-green bb b--newmba-green overflow-x-scroll" style="position:sticky;top:0px;">
@@ -34,7 +36,7 @@
     <div class="flex items-center white f4">
       <div class="mr4"><a class="newmba-offwhite link" href="/library/">QUOTES <span class="f7 newmba-green v-top">{{num_quotes}}</span></a></div>
       <div class="mr4"><a class="newmba-offwhite link"  href="/library/sources/">SOURCES <span class="f7 newmba-green v-top">{{num_sources}}</span></a></div>
-      <div class="mr4"><a class="newmba-offwhite link" href="/library/tags/">TAGS</a></div>
+      <div class="mr4"><a class="newmba-offwhite link" href="/library/tags/">TAGS <span class="f7 newmba-green v-top">{{num_tags}}</span></a></div>
     </div>
     <div class="flex items-center">
       <div class="pr2">Search: </div> 

@@ -4,7 +4,7 @@ layout: library-new
 
 <!--Table-->
 
-{% assign tags = site.library | where: 'layout', 'libraryitem' | map: 'tags' | join: ',' | split: ',' | uniq %}
+
 <div class="w-100 center flex flex-wrap">
 {% for tag in tags %}
 <div class="w-third-l w-100 pa3 item">
