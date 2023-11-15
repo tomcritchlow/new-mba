@@ -15,7 +15,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Nunito Sans", -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   color:#25282b;
   -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
