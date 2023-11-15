@@ -77,8 +77,9 @@ const performSearch = (searchTerm) => {
     var itemTitle = item.getAttribute('data-item-title').toLowerCase();
     var itemSource = item.getAttribute('data-item-source').toLowerCase();
     var itemInsight = item.hasAttribute('data-item-insight') ? item.getAttribute('data-item-insight').toLowerCase() : "";
+    var itemTags = item.hasAttribute('data-item-tags') ? item.getAttribute('data-item-tags').toLowerCase() : "";
 
-    if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm) || itemInsight.includes(searchTerm)) {
+    if (itemTitle.includes(searchTerm) || itemSource.includes(searchTerm) || itemInsight.includes(searchTerm) || itemTags.includes(searchTerm)) {
       item.classList.remove('dn');
       item.classList.add('db');
       if (itemInsight != "") {
