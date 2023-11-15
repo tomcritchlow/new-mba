@@ -9,6 +9,8 @@ layout: library-new
 {% assign tags = site.library | where: 'layout', 'libraryitem' | map: 'tags' | join: ',' | split: ',' | uniq %}
 {% for tag in tags %}
 <div class="w-third-l w-100 pa3 item">
-<div class="newmba-purple">#{{tag}}</div>
+    <div class="bg-newmba-offwhite">
+        <div class="newmba-purple">#{{tag}}</div>
+    </div>
 </div>
 {% endfor %}
