@@ -20,13 +20,19 @@
 <div class="mw9 ph4" id="results">
 
 {% assign num_sources = site.library.size | minus: 1 %}
+{% assign num_quotes = 0 %}
+{% for item in site.library %}
+  {% for quote in item.insights %}
+    {% assign num_quotes = num_quotes | plus :1 %}
+  {% endfor %}
+{% endfor %}
 
   <!--Header row-->
   <div class="w-100 center ph2 bg-newmba-dark-green bb b--newmba-green" style="position:sticky;top:0px;">
     <div class="mw8 center">
     <div class="newmba-green flex pv3 f5 b mw9 center justify-between">
     <div class="flex items-center white f4">
-      <div class="mr4"><a class="newmba-offwhite link" href="/library/">QUOTES</a></div>
+      <div class="mr4"><a class="newmba-offwhite link" href="/library/">QUOTES <span class="f7 newmba-green v-top">{{num_quotes}}</span></a></div>
       <div class="mr4"><a class="newmba-offwhite link"  href="/library/sources/">SOURCES <span class="f7 newmba-green v-top">{{num_sources}}</span></a></div>
       <div class="mr4">TAGS</div>
     </div>
