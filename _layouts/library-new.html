@@ -34,9 +34,9 @@
     <div class="mw8 center">
     <div class="newmba-green flex flex-wrap pv3 f5 b mw9 center justify-between">
     <div class="flex items-center white f4-l f5 pv2 pv0-l">
-      <div class="mr4"><a class="newmba-offwhite link"  href="/library/">SOURCES <span class="f7 newmba-green v-top">{{num_sources}}</span></a></div>
-      <div class="mr4"><a class="newmba-offwhite link" href="/library/quotes/">QUOTES <span class="f7 newmba-green v-top">{{num_quotes}}</span></a></div>
-      <div class="mr4"><a class="newmba-offwhite link" href="/library/tags/">TAGS <span class="f7 newmba-green v-top">{{num_tags}}</span></a></div>
+      <div class="mr4"><a class="newmba-offwhite link librarybutton" id="showsources" href="#">SOURCES <span class="f7 newmba-green v-top">{{num_sources}}</span></a></div>
+      <div class="mr4"><a class="newmba-offwhite link librarybutton" id="showquotes" href="#">QUOTES <span class="f7 newmba-green v-top">{{num_quotes}}</span></a></div>
+      <div class="mr4"><a class="newmba-offwhite link librarybutton" id="showtags" href="/library/tags/">TAGS <span class="f7 newmba-green v-top">{{num_tags}}</span></a></div>
     </div>
     <div class="flex items-center">
       <div class="pr2">Search: </div> 
@@ -52,6 +52,43 @@
 {{content}}
 
 <script>
+  // Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Add click event listeners to library buttons
+    var buttons = document.querySelectorAll('.librarybutton');
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            // Determine which div to show/hide based on the clicked button's ID
+            switch (button.id) {
+                case 'showsources':
+                    document.querySelector("#tags").classList.add("dn");
+                    document.querySelector("#quotes").classList.add("dn");
+                    document.querySelector("#sources").classList.remove("dn");
+                    break;
+                case 'showquotes':
+                    document.querySelector("#tags").classList.add("dn");  
+                    document.querySelector("#quotes").classList.remove("dn");
+                    document.querySelector("#sources").classList.add("dn");
+                    break;
+                case 'showtags':
+                    document.querySelector("#tags").classList.remove("dn");  
+                    document.querySelector("#quotes").classList.add("dn");
+                    document.querySelector("#sources").classList.add("dn");
+                    break;
+                default:
+                    console.log('No matching action for this button');
+            }
+        });
+    });
+});
+
+</script>
+
+<script>
+
 // Highlighter function
 const searchHighlighter = (elem, keyword) => {
   let el = elem;
