@@ -8,7 +8,11 @@ layout: library-new
 <!--Sources-->
 <div class="w-100 center" id="sources">
 <div class="mw8 w-100 center">
-{% assign sorted_items = site.library | sort:"date_saved"  | reverse %}
+{% assign sorted_items = site.library | sort:"date_saved" %}
+{% for post in site.posts %}
+{% assign sorted_items = sorted_items | push: post}
+{% endfor %}
+{% assign sorted_items | sort:date_saved %}
 {% for item in sorted_items %}
 {% if item.layout == "libraryitem" %}
 <div class="pa3 mv3 w-100 br1 bg-newmba-offwhite item" data-item-title="{{item.title}}" data-item-source="{{item.link}}" data-item-tags="{{item.tags | join:',' }}">
