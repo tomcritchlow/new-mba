@@ -6,7 +6,7 @@ layout: library-new
 
 
 <!--Sources-->
-<div class="w-100 center flex flex-wrap">
+<div class="w-100 center">
 <div class="mw8 w-100 center">
 {% assign sorted_items = site.library | sort:"date_saved"  | reverse %}
 {% for item in sorted_items %}
@@ -25,7 +25,8 @@ layout: library-new
 </div>
 
 <!--Tags-->
-<div class="w-100 center flex flex-wrap">
+<div class="w-100 center dn">
+<div class="flex flex-wrap">
 {% assign tags = site.library | where: 'layout', 'libraryitem' | map: 'tags' | join: ',' | split: ',' | uniq %}
 {% for tag in tags %}
 <div class="w-third-l w-100 pa3 item">
@@ -34,4 +35,5 @@ layout: library-new
     </div>
 </div>
 {% endfor %}
+</div>
 </div>
