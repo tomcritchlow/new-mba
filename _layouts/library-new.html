@@ -96,9 +96,7 @@ function scrollTop(){
     });
 });
 
-</script>
 
-<script>
 
 // Highlighter function
 const searchHighlighter = (elem, keyword) => {
@@ -164,6 +162,7 @@ function searchFromQueryString() {
   if (searchTerm) {
     document.getElementById('searchBox').value = searchTerm; // Set the value of the search box
     performSearch(searchTerm.toLowerCase());
+    scrollTop();
   }
 }
 
