@@ -55,6 +55,14 @@
   // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
 
+function scrollTop(){
+  const inputRect = document.getElementById("results").getBoundingClientRect();
+    window.scrollTo({
+        top: inputRect.top + window.pageYOffset,
+        behavior: 'smooth'
+      });  
+};
+
     // Add click event listeners to library buttons
     var buttons = document.querySelectorAll('.librarybutton');
     buttons.forEach(function(button) {
@@ -67,16 +75,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.querySelector("#tags").classList.add("dn");
                     document.querySelector("#quotes").classList.add("dn");
                     document.querySelector("#sources").classList.remove("dn");
+                    scrollTop();
                     break;
                 case 'showquotes':
                     document.querySelector("#tags").classList.add("dn");  
                     document.querySelector("#quotes").classList.remove("dn");
                     document.querySelector("#sources").classList.add("dn");
+                    scrollTop();
                     break;
                 case 'showtags':
                     document.querySelector("#tags").classList.remove("dn");  
                     document.querySelector("#quotes").classList.add("dn");
                     document.querySelector("#sources").classList.add("dn");
+                    scrollTop();
                     break;
                 default:
                     console.log('No matching action for this button');
