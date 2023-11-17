@@ -14,8 +14,19 @@ layout: library-new
 
 
 
-Site_posts {{ site.posts | jsonify | pretty_print }}
-Sorted items: {{ sorted_items | jsonify | pretty_print }}
+
+{% for post in site.posts %}
+{% assign new_post = "" | split:"," %}
+{% assign new_post.title = post.title %}
+{% assign formatted_posts = formatted_posts | push: new_post %}
+{% endfor %}
+
+<script>
+    console.log({{ site.posts | jsonify | pretty_print }})
+    console.log({{ formatted_posts | jsonify | pretty_print }})
+    console.log({{ sorted_items | jsonify | pretty_print }})
+</script>
+
 {% assign sorted_items = sorted_items | sort:"date_saved" | reverse %}
 {% for item in sorted_items %}
 {% if item.layout == "libraryitem" %}
