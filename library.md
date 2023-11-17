@@ -12,7 +12,7 @@ layout: library-new
 {% assign sorted_items = sorted_items | push: sorted_items.first %}
 {% assign formatted_posts = "" | split: "," %}
 {% for post in site.posts %}
-    {% capture new_post %}{"title":{{post.title}}}{% endcapture %}
+    {% capture new_post %}{title:{{post.title}}}{% endcapture %}
     {% assign formatted_posts = formatted_posts | push: new_post %}
 {% endfor %}
 Formatted posts {{ formatted_posts | jsonify | pretty_print }}
