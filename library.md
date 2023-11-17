@@ -9,12 +9,12 @@ layout: library-new
 <div class="w-100 center" id="sources">
 <div class="mw8 w-100 center">
 {% assign sorted_items = site.library %}
-{% assign sorted_items = sorted_items | push: sorted_items.first %}
+
 {% assign formatted_posts = "" | split: "," %}
 
-{% assign formatted_posts = site.posts | where: "link", page.url %}
 
-Formatted posts {{ formatted_posts | jsonify | pretty_print }}
+
+Site_posts {{ site.posts | jsonify | pretty_print }}
 Sorted items: {{ sorted_items | jsonify | pretty_print }}
 {% assign sorted_items = sorted_items | sort:"date_saved" | reverse %}
 {% for item in sorted_items %}
