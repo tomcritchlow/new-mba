@@ -11,9 +11,7 @@ layout: library-new
 {% assign sorted_items = site.library %}
 {% for post in site.posts %}
     {% assign new_post = "" | split: "," %} 
-    {% assign new_post.title = post.title %}
-    
-
+    {% assign new_post.title = "hello" %}
     {% assign sorted_items = sorted_items | push: new_post %}
 {% endfor %}
 {% assign sorted_items = sorted_items | sort:"date_saved" | reverse %}
