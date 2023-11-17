@@ -31,7 +31,7 @@ layout: library-new
 
 {% assign sorted_items = sorted_items | sort:"date_saved" | reverse %}
 {% for item in combined %}
-{% if item.layout == "libraryitem" %}
+
 <div class="pa3 mv3 w-100 br1 bg-newmba-offwhite item" data-item-title="{{item.title}}" data-item-source="{{item.link}}" data-item-tags="{{item.tags | join:',' }}">
 <div class="flex flex-wrap w-100 items-center">
 <a class="link black w-40-l w-100 b itemtitle" href="{{item.url}}">{{item.title}}</a>
@@ -40,7 +40,7 @@ layout: library-new
 <div class="w-20-l w-100 tr f7">{% for tag in item.tags %}<a href="/library/?search={{tag}}" class="link newmba-purple b">#{{tag}}</a>{% endfor %}</div>
 </div>
 </div>
-{% endif %}
+
 {% endfor %}
 </div>
 </div>
