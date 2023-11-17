@@ -3,6 +3,8 @@ title: The Capital of Ideas
 subtitle: Learning to dance with strategic finance
 og: https://newmba.co/images/strategic-finance-og.png
 layout: post
+tags:
+ - "capital"
 ---
 
 {% include summary.html content="
