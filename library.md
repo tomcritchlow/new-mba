@@ -9,7 +9,7 @@ layout: library-new
 <div class="w-100 center" id="sources">
 <div class="mw8 w-100 center">
 {% assign sorted_items = site.library "%}
-{{sorted_items.first}}
+{% assign sorted_items = sorted_items | push: sorted_items.first %}
 {% assign formatted_posts = "" | split: "," %}
 {% for post in site.posts %}
     {% assign new_post = "" | split: "," %} 
