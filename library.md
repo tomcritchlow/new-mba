@@ -18,7 +18,7 @@ layout: library-new
     {% assign new_post.url = post.url %}
     {% assign formatted_posts = formatted_posts | push: new_post %}
 {% endfor %}
-
+{% assign sorted_items = sorted_items | concat: formatted_posts %}
 {% assign sorted_items = sorted_items | sort:"date_saved" | reverse %}
 {% for item in sorted_items %}
 {% if item.layout == "libraryitem" %}
