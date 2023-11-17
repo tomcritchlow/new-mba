@@ -11,10 +11,9 @@ layout: library-new
 {% assign sorted_items = site.library %}
 {% assign sorted_items = sorted_items | push: sorted_items.first %}
 {% assign formatted_posts = "" | split: "," %}
-{% for post in site.posts %}
-    {% capture new_post %}{title:{{post.title}}}{% endcapture %}
-    {% assign formatted_posts = formatted_posts | push: new_post %}
-{% endfor %}
+
+{% assign formatted_posts = site.posts | where: "link", page.url %}
+
 Formatted posts {{ formatted_posts | jsonify | pretty_print }}
 Sorted items: {{ sorted_items | jsonify | pretty_print }}
 {% assign sorted_items = sorted_items | sort:"date_saved" | reverse %}
