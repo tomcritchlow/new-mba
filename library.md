@@ -9,10 +9,11 @@ layout: library-new
 <div class="w-100 center" id="sources">
 <div class="mw8 w-100 center">
 {% assign sorted_items = site.library %}
+{% assign formatted_posts = "" | split: "," %}
 {% for post in site.posts %}
     {% assign new_post = "" | split: "," %} 
     {% assign new_post.title = "hello" %}
-    {% assign sorted_items = sorted_items | push: new_post %}
+    {% assign formatted_posts = formatted_posts | push: new_post %}
 {% endfor %}
 {% assign sorted_items = sorted_items | sort:"date_saved" | reverse %}
 {% for item in sorted_items %}
