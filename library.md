@@ -21,11 +21,19 @@ layout: library-new
 {% assign formatted_posts = formatted_posts | push: new_post %}
 {% endfor %}
 
-<script>
-    console.log({{ site.posts | jsonify | pretty_print }})
-    console.log({{ formatted_posts | jsonify | pretty_print }})
-    console.log({{ sorted_items | jsonify | pretty_print }})
-</script>
+{% assign combined = "" | split:"," %}
+{% for item in sorted_items %}
+{% assign combined = combined | push: item %}
+{% endfor %}
+{% for item in site.posts %}
+{% assign combined = combined | push: item %}
+{% endfor %}
+
+{{ site.posts | jsonify | pretty_print }}
+{{ formatted_posts | jsonify | pretty_print }}
+{{ sorted_items | jsonify | pretty_print }}
+{{ combined | jsonify | pretty_print }}
+
 
 {% assign sorted_items = sorted_items | sort:"date_saved" | reverse %}
 {% for item in sorted_items %}
