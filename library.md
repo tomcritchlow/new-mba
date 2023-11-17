@@ -26,11 +26,11 @@ layout: library-new
 {% assign combined = combined | push: item %}
 {% endfor %}
 
-{{ combined | jsonify | pretty_print }}
+
 
 
 {% assign sorted_items = sorted_items | sort:"date_saved" | reverse %}
-{% for item in sorted_items %}
+{% for item in combined %}
 {% if item.layout == "libraryitem" %}
 <div class="pa3 mv3 w-100 br1 bg-newmba-offwhite item" data-item-title="{{item.title}}" data-item-source="{{item.link}}" data-item-tags="{{item.tags | join:',' }}">
 <div class="flex flex-wrap w-100 items-center">
