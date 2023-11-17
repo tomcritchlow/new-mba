@@ -13,8 +13,6 @@ layout: library-new
 {% assign formatted_posts = "" | split: "," %}
 
 
-
-
 {% for post in site.posts %}
 {% assign new_post = "" | split:"," %}
 {% assign new_post.title = post.title %}
