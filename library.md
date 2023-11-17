@@ -8,7 +8,7 @@ layout: library-new
 <!--Sources-->
 <div class="w-100 center" id="sources">
 <div class="mw8 w-100 center">
-{% assign sorted_items = site.library %}
+{% assign sorted_items = site.library | split:","%}
 {% assign formatted_posts = "" | split: "," %}
 {% for post in site.posts %}
     {% assign new_post = "" | split: "," %} 
