@@ -26,9 +26,6 @@ layout: library-new
 {% assign combined = combined | push: item %}
 {% endfor %}
 
-{{ site.posts | jsonify | pretty_print }}
-{{ formatted_posts | jsonify | pretty_print }}
-{{ sorted_items | jsonify | pretty_print }}
 {{ combined | jsonify | pretty_print }}
 
 
